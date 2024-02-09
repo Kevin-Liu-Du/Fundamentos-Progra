@@ -1,0 +1,68 @@
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el contenido verticalmente */
+    height: 100vh; /* Establecer la altura al 100% de la altura de la ventana */
+    margin: 0; /* Eliminar márgenes para evitar espacios innecesarios */
+    overflow: hidden; /* Evitar desbordamiento del contenido */
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/Bently.jpg);
+    /*color del modo*/
+    background-color: black;
+    /*modo de color*/
+    background-blend-mode: luminosity;
+    /*profundidad*/
+    box-shadow: inset 0 0 0  1000px  rgba(0, 0, 0, 0.6);
+}
+
+.espacio{
+    padding: 120px 0;
+}
+
+h1{
+    font-size: 60px;
+}
+
+h2{
+    color: blanchedalmond;
+    font-size: 60px;
+}
+
+/*=====================================Estilo para el botón======================= */
+.btn-primary {
+    position: relative;
+    z-index: 1;
+    background-color: transparent; /* Fondo transparente para el botón */
+    border: none;
+    
+  }
+
+.btn-primary:hover {
+    background-color: blanchedalmond;; /* Cambia el fondo al pasar el mouse */
+    color: #000; /* Cambia el color del texto al pasar el mouse */
+  }
+  
+  .btn-primary::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajusta según la posición deseada de la línea */
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #fff; /* Color de la línea */
+    z-index: -1;
+  }
+/*=====================================Estilo para el botón======================= */
+
+/*=====================================Estilo para footer======================= */
+footer{
+    color: #fff;
+    background-color: black;
+}
+
+footer h3{ 
+    font-size: 15px;
+}
+/*=====================================Estilo para footer======================= */

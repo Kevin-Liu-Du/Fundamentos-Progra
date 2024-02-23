@@ -1,0 +1,44 @@
+/*============================================================ */
+body {
+    background-color: hsl(219, 4%, 4%);
+}
+/*============================================================ */
+.banner1 {
+    background-image: url(../img/garaje.jpg);
+    background-size: cover;
+    background-position: center;
+    /*efecto parallax*/
+    background-attachment: fixed;
+}
+
+.container-fluid1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.banner2 {
+    background-image: url(../img/garaje.jpg);
+    background-size: cover;
+    background-position: center;
+    /*efecto parallax*/
+    background-attachment: fixed;
+}
+
+.container-fluid3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+/*=====================================Estilo para footer======================= */
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed; /* Cambia 'relative' a 'fixed' */
+    bottom: 0;
+    width: 100%;
+}
+/*=====================================Estilo para footer======================= */

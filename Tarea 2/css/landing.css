@@ -56,16 +56,61 @@ h3{
 }
 /*=====================================Estilo para el botón======================= */
 
+
+
+
 /*=====================================Estilo para redes sociales======================= */
+/* Estilos para los íconos de redes sociales */
+.icons {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    margin: 0; /* Elimina el margen predeterminado de la lista */
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+}
+
+.icons li {
+    margin-right: 10px; /* Espacio entre los íconos */
+}
+
+.icons a {
+    display: inline-block; /* Hace que los íconos sean elementos de bloque */
+    width: 40px; /* Ancho uniforme para todos los íconos */
+    height: 40px; /* Altura uniforme para todos los íconos */
+    line-height: 40px; /* Alinea verticalmente los íconos */
+    text-align: center; /* Centra el contenido dentro de los íconos */
+    color: white; /* Color de los íconos */
+    transition: color 0.3s ease; /* Transición suave del color */
+    text-decoration: none;
+    border-radius: 50%; /* Hace que los íconos sean circulares */
+    background-color: rgba(255, 255, 255, 0.2); /* Color de fondo transparente con opacidad */
+}
+
+/* Estilos para el icono de Twitter en hover */
+.twitter:hover {
+    color: #1DA1F2; /* Cambia de color al pasar el ratón */
+}
+
+/* Estilos para el icono de Instagram en hover */
+.instagram:hover {
+    color: #E4405F; /* Cambia de color al pasar el ratón */
+}
+
+/* Estilos para el icono de Facebook en hover */
+.facebook:hover {
+    color: #1877F2; /* Cambia de color al pasar el ratón */
+}
+
+
 /*=====================================Estilo para redes sociales======================= */
 
 /*=====================================Estilo para footer======================= */
-footer{
-    color: #fff;
-    background-color: black;
-}
-
-footer h3{ 
-    font-size: 15px;
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed; /* Cambia 'relative' a 'fixed' */
+    bottom: 0;
+    width: 100%;
 }
 /*=====================================Estilo para footer======================= */

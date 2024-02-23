@@ -19,6 +19,32 @@
 .espacio{
     padding: 120px 0;
 }
+/*=====================================linea======================= */
+/* Estilos para el contenedor principal */
+.container1 {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para las líneas horizontales */
+.linea {
+    width: 100px; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    display: inline-block; /* Hace que las líneas estén una al lado de la otra */
+    margin: 0 15px; /* Espacio entre las líneas */
+    vertical-align: middle; /* Alinea verticalmente con el símbolo */
+}
+
+/* Estilos para el símbolo de estrella */
+.symbol {
+    font-size: 24px; /* Tamaño de la fuente */
+    color: white; /* Color del símbolo */
+    vertical-align: middle; /* Alinea verticalmente con las líneas */
+}
+
+
+/*=====================================linea======================= */
+
 
 h1{
     font-size: 60px;
@@ -57,12 +83,13 @@ h2{
 /*=====================================Estilo para el botón======================= */
 
 /*=====================================Estilo para footer======================= */
-footer{
-    color: #fff;
-    background-color: black;
-}
-
-footer h3{ 
-    font-size: 15px;
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed; /* Cambia 'relative' a 'fixed' */
+    bottom: 0;
+    width: 100%;
 }
 /*=====================================Estilo para footer======================= */

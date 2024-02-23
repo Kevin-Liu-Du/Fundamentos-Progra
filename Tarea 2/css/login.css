@@ -1,12 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
+/*=====================================banner======================= */
 body{
     display: flex;
     justify-content: center;
@@ -17,8 +9,6 @@ body{
 }
 
 .container{
-    /*background-color: green;*/
-    width: 420px;
     border: 2px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     color: #fff;
@@ -26,82 +16,126 @@ body{
     padding: 30px 40px;
     backdrop-filter: blur(10px);
 }
+/*=====================================banner======================= */
 
-.container h1{
-    font-size: 36px;
-    text-align: center;
+/*============================================================ */
+
+/* Estilo para los campos de usuario y contraseña */
+.form-control {
+    border: none; /* Elimina el borde por defecto */
+    border-bottom: 2px solid #ccc; /* Añade una línea inferior */
+    border-radius: 0; /* Elimina los bordes redondeados */
+    background-color: transparent; /* Fondo transparente */
+    box-shadow: none; /* Sin sombra */
+    padding: 8px 0; /* Espaciado interno */
+    transition: border-color 0.3s ease; /* Transición suave para el cambio de color de borde */
+    font-size: 16px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
 }
 
-.container .input-box{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0px;
+/* Estilo para el texto de las etiquetas */
+.form-label {
+    font-size: 20px; /* Tamaño de fuente */
+    color: beige; /* Color del texto */
+    margin-bottom: 5px; /* Margen inferior */
+    display: block; /* Mostrar como bloque para separar verticalmente */
 }
 
-.input-box input{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    font-size: 16px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
+/* Estilo para el borde inferior en foco */
+.form-control:focus {
+    outline: none; /* Elimina el contorno de enfoque */
+    border-color: #4CAF50; /* Cambia el color de la línea inferior al enfocar */
+    box-shadow: 0 -2px 0 #4CAF50; /* Agrega una sombra en el borde inferior al enfocar */
 }
 
-.input-box input::placeholder{
-    color: #fff;
+/* Estilo para el borde inferior en hover */
+.form-control:hover {
+    border-color: #4CAF50; /* Cambia el color de la línea inferior al pasar el ratón */
 }
 
-.container .recordar-olvidar{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0px 15px;
+/* Estilo para la selección de texto dentro de los campos de formulario */
+.form-control::selection {
+    background-color: transparent; /* Color de fondo de la selección */
+    color: white; /* Color del texto seleccionado */
 }
 
-.recordar-olvidar label input{
-    color: #fff;
-    margin-right: 3px;
-}
 
-.recordar-olvidar a{
-    color: #fff;
-    text-decoration: none;
-}
 
-.recordar-olvidar a:hover{
-    text-decoration: underline;
-}
 
-.container .btn{
-    width: 100%;
-    height: 45px;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+/*============================================================ */
+
+.cursor {
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
 }
 
-.container .register-link{
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0px 20px;
+.animacion2 {
+    width: 70%;
 }
 
-.register-link p a{
-    color: #fff;
+.usuario {
+    width: 70%;
+}
+
+a {
+    font-weight: bolder;
+    color: gray;
     text-decoration: none;
 }
 
-.register-link p a:hover{
-    text-decoration: underline;
+a:hover {
+    color: beige;
+    text-decoration: none;
 }
+
+input:checked {
+    background-color: gray!important;
+}
+
+input,
+select {
+    cursor: pointer;
+}
+/*estilo que permite mostrar los campos validados con un borde de color rojo*/
+
+.error {
+    border: red solid 1px;
+}
+
+.btninicio {
+    color: black;
+    background-color: gray !important;
+    font-size: 20px;
+    width: 100%;
+}
+
+#forgot-pass {
+    font-weight: bold;
+    text-align: end;
+    font-size: 12px;
+}
+
+@media (max-width:575px) {
+    .animacion1 {
+        width: 80% !important;
+        margin: 0 auto !important;
+        display: block !important;
+    }
+    .animacion2 {
+        width: 100% !important;
+    }
+}
+
+
+/*=====================================Estilo para footer======================= */
+footer {
+    background-color: none;
+    color: #f7f7f77e;
+    text-align: center;
+    padding-top: 14px;
+    position: fixed; /* Cambia 'relative' a 'fixed' */
+    bottom: 0;
+    width: 100%;
+}
+/*=====================================Estilo para footer======================= */
+
+

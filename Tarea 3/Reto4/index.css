@@ -60,81 +60,54 @@ body {
     /* Mantenemos la misma imagen al hacer hover */
 }
 
-/*------------------------------------------termina estilo para nav bar-------------------------------------------*/
-h1 {
-    background-color:  #008cff;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 700;
-    padding: 25px;
+/*-------------------------------------------------------------------------------------*/
+.banner1 {
+    background-image: url(../Reto4/img/porsche.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
 }
 
 p {
+    text-align: justify;
+}
+
+.resultado {
+    width: 500px;
+    height: 250px;
+    /*text-align: center;
+    display: block;*/
+}
+
+.formato1 {
     font-size: 20px;
+    text-align: left;
 }
+/*apariencia del control SELECT*/
 
-
-/*botones*/
-
-button {
-    border: none;
-    margin-left: 10px;
-    padding: 12px 22px;
-    border-radius: 100px;
-    color: #fff;
-}
-
-#agregarBtn {
-    border-radius: 50px;
-}
-
-#limpiarBtn {
-    border-radius: 50px;
-}
-
-
-/*tabla*/
-
-th {
-    font-size: 18px;
-    color: #000;
-}
-
-input {
+select {
+    color: black;
+    background-color: beige;
     font-size: 20px;
+    border: 2px solid black;
+    padding: 8px 10px;
 }
+/*apariencia de los textos que estan dentro del SELECT*/
 
-input:hover {
+option {
     background-color: #e4e4e4;
-    border: 2px solid #3a7aa5;
-}
-
-label {
-    color: #000;
     font-size: 20px;
-    font-weight: bold;
-    width: 250px;
-    margin-right: 10px;
-}
-/*-------------------------------------------------------------------------------------*/
-
-/*--------------------------------------Estilo para la factura-----------------------------------------------*/
-#factura {
-    display: none; /* Ocultar la factura inicialmente */
-    border: 2px solid #3a7aa5;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    margin-bottom: 50px;
+    color: #000;
 }
 
-#factura.mostrar {
-    display: block; /* Mostrar la factura cuando tenga la clase "mostrar" */
+@media (max-width: 576px) {
+    #resultado {
+        /*por mostrar la imagen usando style backgroundImage se deben usar estas instrucciones*/
+        background-position: center center !important;
+        background-size: 80% !important;
+        background-repeat: no-repeat !important;
+    }
 }
-
-
 
 
 /*-------------------------------------------------------------------------------------*/
@@ -172,4 +145,7 @@ footer.container-fluid ul li a:hover {
     color: #ffcc00;
 }
 
-/*------------------------------------------termina estilo para footer-------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+

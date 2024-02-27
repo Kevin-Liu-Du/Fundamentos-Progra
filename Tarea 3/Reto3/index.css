@@ -59,83 +59,31 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Crect width='30' height='3' rx='1.5' fill='%23000'/%3E%3Crect y='12' width='30' height='3' rx='1.5' fill='%23000'/%3E%3Crect y='24' width='30' height='3' rx='1.5' fill='%23000'/%3E%3C/svg%3E");
     /* Mantenemos la misma imagen al hacer hover */
 }
-
-/*------------------------------------------termina estilo para nav bar-------------------------------------------*/
-h1 {
-    background-color:  #008cff;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 700;
-    padding: 25px;
+/*-------------------------------------------------------------------------------------*/
+header {
+    background-color: #781e38;
 }
 
 p {
-    font-size: 20px;
+    text-align: justify;
 }
 
+.cine-link {
+    /* Estilos por defecto */
+    color: #007bff; /* Color de texto */
+    text-decoration: none; /* Eliminar subrayado predeterminado */
+    transition: color 0.3s ease; /* Transición suave de color */
 
-/*botones*/
-
-button {
-    border: none;
-    margin-left: 10px;
-    padding: 12px 22px;
-    border-radius: 100px;
-    color: #fff;
+    /* Agregar márgenes o padding según sea necesario */
 }
 
-#agregarBtn {
-    border-radius: 50px;
+.cine-link:hover {
+    /* Estilos al hacer hover */
+    color: #0056b3; /* Cambio de color de texto al hacer hover */
+    cursor: pointer; /* Cambio de cursor al hacer hover */
 }
 
-#limpiarBtn {
-    border-radius: 50px;
-}
-
-
-/*tabla*/
-
-th {
-    font-size: 18px;
-    color: #000;
-}
-
-input {
-    font-size: 20px;
-}
-
-input:hover {
-    background-color: #e4e4e4;
-    border: 2px solid #3a7aa5;
-}
-
-label {
-    color: #000;
-    font-size: 20px;
-    font-weight: bold;
-    width: 250px;
-    margin-right: 10px;
-}
-/*-------------------------------------------------------------------------------------*/
-
-/*--------------------------------------Estilo para la factura-----------------------------------------------*/
-#factura {
-    display: none; /* Ocultar la factura inicialmente */
-    border: 2px solid #3a7aa5;
-    border-radius: 10px;
-    padding: 20px;
-    background-color: #f8f9fa;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    margin-bottom: 50px;
-}
-
-#factura.mostrar {
-    display: block; /* Mostrar la factura cuando tenga la clase "mostrar" */
-}
-
-
-
+    
 
 /*-------------------------------------------------------------------------------------*/
 /* Estilos para el footer */
@@ -172,4 +120,7 @@ footer.container-fluid ul li a:hover {
     color: #ffcc00;
 }
 
-/*------------------------------------------termina estilo para footer-------------------------------------------*/
+/*-------------------------------------------------------------------------------------*/
+
+
+

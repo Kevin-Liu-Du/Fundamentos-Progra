@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Reto 1</title>
+        <title>Reto 4</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <link rel="stylesheet" href="index.css">
@@ -16,11 +16,7 @@
         <!--Libreria de REMIXicons-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
 
-        
-
     </head>
-
-
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid">
@@ -74,59 +70,60 @@
             </div>
         </nav>
 
-        <section class="container">
-            <div class="pt-5"></div>
-            <h1 class="text-center display-3">Reto 2</h1>
+        <header class="container-fluid banner1">
+            <div class="text-center">
+                <h5 class="display-6 text-white">Reto 4</h5>
+                <h1 class="display-2 text-white">Carros hiperdeportivos</h1>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                        <p class="container text-left pt-5 formato1">
+                            Los hiperdeportivos son automóviles de alto rendimiento diseñados para alcanzar velocidades extremadamente altas y ofrecer un manejo excepcional en carreteras y circuitos. Estos vehículos suelen destacarse por su potencia, diseño aerodinámico y tecnología de vanguardia. Generalmente, están equipados con motores de alto rendimiento, chasis ligeros y sistemas avanzados de suspensión y frenado para proporcionar un rendimiento excepcional en términos de velocidad, aceleración y manejo. Ejemplos emblemáticos de hiperdeportivos incluyen el Bugatti Chiron, el Koenigsegg Jesko, el Pagani Huayra y el McLaren P1, entre otros. Estos automóviles suelen ser producidos en cantidades limitadas y están destinados a entusiastas adinerados y coleccionistas de automóviles que buscan lo último en rendimiento y exclusividad.
+                        </p>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
     
-            <!-- Ingresar datos -->
-            <br><br>
-            <div class="input-group mb-3">
-                <label for="cliente">Cliente:</label>
-                <input id="cliente" type="text" class="form-control">
+                        <select id="foto" class="mt-5">  
+            <option disabled hidden selected>Seleccione una opción</option>
+            <option value="1">Koenigsegg Jesko</option>
+            <option value="2">Bugatti Chiron</option>
+            <option value="3">Pagani Huayra Roadster</option>
+            <option value="4">Aston Martin Valkyrie</option>
+            </select>
+                        <div id="resultado" class="resultado img-fluid"></div>
+                        <p id="descripcion" class="text-left formato1"></p>
+                    </div>
+                </div>
             </div>
-            <div class="input-group mb-3">
-                <label for="articulo">Artículo:</label>
-                <input id="articulo" type="text" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-                <label for="cantidad">Cantidad:</label>
-                <input id="cantidad" type="number" class="form-control">
-            </div>
-            <div class="input-group mb-3">
-                <label for="precio">Precio:</label>
-                <input id="precio" type="number" class="form-control">
-            </div>
-    
-            <div class="pt-3 d-flex justify-content-center">
-                <button class="btn btn-outline-primary" id="agregarBtn" onclick="calcularFactura()"><i class="ri-add-circle-line"></i> Facturar</button>
-                <button class="btn btn-outline-danger" id="limpiarBtn" onclick="limpiar()"><i class="ri-delete-bin-line"></i> Borrar</button>
-            </div>
-            <br><br>
-    
-            <!-- Factura -->
-            <div id="factura" class="mt-5"></div>
         </section>
 
+        <script>
+            //activa la funcion al cargar la pagina web
+            window.onload = function() {
+                //funcion que permite elegir la foto
+                document.getElementById('foto').onchange = function(e) {
+                    //guarda el destino o valor de la foto en una variable 
+                    n = e.target.value;
+                    //expresion en variable que busca las fotos dentro de la carpeta imagenes JPG
+                    var archivo = "url('../Reto4/img/img" + n + ".jpg')";
+                    //envia la foto al lugar respectivo (id llamado resultado)
+                    //la variable archivo almaceno la imagen elegida por el usuario
+                    document.getElementById("resultado").style.backgroundImage = archivo;
+                }
+            }
+        </script>
+
+        <script src="../Reto4/index.js"></script>
 
         <footer class="container-fluid">
             <ul class="copyright">
                 <li>&copy;Tarea 3</li><li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
             </ul>
-        </footer> 
-        
-    
-        <!-- programacion JS -->
-        <script src="../Reto2/index.js"></script>
-        <!-- libreria desplegables -->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-        <!-- libreria SWEETALERT-->
-        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-        <!-- interactividad Lottie JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
-
-        <!-- libreria Lottie JS-->
-        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
-    
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

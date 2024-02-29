@@ -1,0 +1,166 @@
+
+body {
+    background-color: #dfe9f5;
+    font-size: 22px;
+}
+
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1px;
+}
+
+.optmenu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: all 1s solid;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: color 0.5s; /* Transición suave para el cambio de color */
+} 
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Cambio de color al pasar el ratón sobre el enlace del navbar */
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #007bff; /* Color del texto del enlace activo del navbar en menu hamburguesa */
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+.navbar-toggler {
+    background-color: transparent; /* Hacemos transparente el fondo del botón */
+    border: none; /* Eliminamos el borde del botón */
+    padding: 0; /* Eliminamos el padding para que no haya espacio extra */
+    outline: none; /* Eliminamos el borde de enfoque */
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: transparent; /* Hacemos transparente el borde */
+}
+
+/* PERSONALIZACION lineas HAMBURGUESA */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Crect width='30' height='3' rx='1.5' fill='%23000'/%3E%3Crect y='12' width='30' height='3' rx='1.5' fill='%23000'/%3E%3Crect y='24' width='30' height='3' rx='1.5' fill='%23000'/%3E%3C/svg%3E");
+    width: 20px; /* Ajustamos el ancho del icono */
+    height: 20px; /* Ajustamos el alto del icono */
+    background-size: cover; /* Ajustamos el tamaño del fondo */
+    transition: background-image 0.3s; /* Agregamos una transición suave para el cambio de imagen */
+}
+
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30' width='30' height='30'%3E%3Crect width='30' height='3' rx='1.5' fill='%23000'/%3E%3Crect y='12' width='30' height='3' rx='1.5' fill='%23000'/%3E%3Crect y='24' width='30' height='3' rx='1.5' fill='%23000'/%3E%3C/svg%3E");
+    /* Mantenemos la misma imagen al hacer hover */
+}
+/*-------------------------------------------------------------------------------------*/
+
+p {
+    font-size: 22px;
+}
+
+.formatos1 {
+    color: brown;
+}
+
+header {
+    background-color: #000;
+    height: 60px;
+}
+
+.inicio {
+    border-bottom: 1px solid rgb(143, 50, 50);
+}
+
+.logo {
+    padding: 30px 100px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.logo2 img {
+    width: 70%;
+}
+
+.porsche {
+    padding: 80px 100px;
+}
+
+.porsche h1 {
+    letter-spacing: 3px;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+h4 {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+select {
+    width: 100%;
+    padding: 3px 20px;
+}
+
+.imagen img {
+    width: 100%;
+}
+
+
+@media(max-width: 765px) {
+    .logo img {
+        width: 100%;
+    }
+}
+/*-------------------------------------------------------------------------------------*/
+/* Estilos para el footer */
+footer.container-fluid {
+    position: fixed; /* Fijar el footer en la parte inferior */
+    bottom: 0; /* Colocar el footer al final de la página */
+    width: 100%; /* Ancho completo del footer */
+    display: flex; /* Usar flexbox para centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 20px 0; /* Espaciado interior del footer */
+    z-index: 9999; /* Asegurar que el footer esté por encima de otros elementos */
+}
+
+footer.container-fluid ul {
+    list-style: none; /* Eliminar los estilos de lista predeterminados */
+    margin: 0; /* Eliminar el margen */
+    padding: 0; /* Eliminar el relleno */
+}
+
+footer.container-fluid ul li {
+    display: inline; /* Mostrar los elementos de lista en línea */
+    margin: 0 10px; /* Agregar un margen entre los elementos de lista */
+    color: #000; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+footer.container-fluid ul li a {
+    color: #000; /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+footer.container-fluid ul li a:hover {
+    color: #ffcc00;
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+
+

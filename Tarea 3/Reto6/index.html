@@ -3,12 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Reto 3</title>
+        <title>Tarea 3</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
         <link rel="stylesheet" href="../index.css">
 
-        <link rel="stylesheet" href="../Reto3/index.css">
+        <link rel="stylesheet" href="../Reto6/index.css">
+
 
         <link rel="icon" href="../favicon.png">
 
@@ -17,6 +18,8 @@
 
         <!--Libreria de REMIXicons-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+
+
 
     </head>
     <body>
@@ -73,55 +76,75 @@
         </nav>
 
         <header>
-            <div class="container mb-5">
-                <div class="d-flex justify-content-center align-items-center p-3">
-                    <div class="ms-5 text-light">
-                        <h1 class="text-center">Reto 3 Cine</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 col-lg-3">
+                        <div class="img">
+                            <img src="../Reto6/img/logo.png" alt="Logo de porsche" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-9 col-lg-9">
+    
                     </div>
                 </div>
             </div>
         </header>
 
-        <div class="container">
-            <div class="row gx-5 gy-4 mt-4">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <section>
-                        <div>
-                            <p>El cine es una ventana a infinitas realidades, una expresión artística que nos transporta a mundos desconocidos o nos refleja de manera sorprendente. A través de la magia de la cinematografía, las historias cobran vida, los personajes se vuelven cercanos y las emociones se vuelven palpables. Ya sea que nos sumerjamos en una épica aventura, nos perdamos en un drama profundo o nos riamos con una comedia hilarante, el cine nos invita a explorar, reflexionar y sentir, convirtiéndose en un poderoso medio para conectar con nuestro mundo y con nosotros mismos.</p>
-                            <p>La experiencia cinematográfica más destacada tendrá lugar en los siguientes escenarios.</p>
-                        </div>
-                    </section>
-                    <section>
-                        <div>
-                            <select class="form-select" id="cine">
-                                <option value="" selected disabled>Escoge tu cine</option>
-                                <option value="1">Avenida Escazú</option>
-                                <option value="2">Ciudad del Este Curridabat</option>
-                                <option value="3">Plaza Real Alajuela</option>
-                            </select>
-                        </div>
-                        <div class="mt-4">
-                            <button class="btn btn-danger" id="btn-clean">Reiniciar</button>
-                        </div>
-                    </section>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6 mb-5">
-                    <div class="d-flex justify-content-center mb-2" id="output-img"></div>
-                    <div class="text-center fst-italic" id="output-txt"></div>
-                </div>
-            </div>
-        </div>
-
+        <section class="banner container-fluid">
         </section>
 
-        <script src="../Reto3/index.js"></script>
+        <section class="container info ">
+            <div class="row ">
+                <div class="col-sm-4 col-md-6 col-lg-6 ">
+                    <h2>Porsche 911 GT3 RS</h2>
+                    <div class="pt-2"></div>
+                    <p style="text-align: justify;">
+                        El Porsche 911 GT3 RS es una versión especial y altamente modificada del icónico Porsche 911, diseñada para ofrecer un rendimiento excepcional tanto en carretera como en pistas de carrera. Equipado con un motor de alto rendimiento y una serie de mejoras en la aerodinámica, suspensión y frenos, el 911 GT3 RS es una máquina diseñada para emocionar a los entusiastas del automovilismo más exigentes. Con su distintivo diseño y su legado de victorias en competiciones de alto nivel, este modelo encarna la pasión y la excelencia técnica que caracterizan a la marca Porsche.</p>
+                </div>
+                <div class="col-sm-8 col-md-6 col-lg-6 ">
+                    <div class="container text-center info2 ">
+                        <div class="info3 ">
+                            <h2>Desde:</h2>
+                            <h3>$37.800</h3>
+                            <button class="mb-3 mt-3 button1 ">Calcular financiamiento</button><br>
+                            <button class="button2 ">Contactar por whatsapp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container text-center pt-4 ">
+            <h2 class="pb-3 ">"Velocidad, exclusividad, perfección"</h2>
+            <p>AGARRA EL VOLANTE DE TU DESTINO</p>
+    
+        <!-- AQUI VA EL CODIGO Y EVENTO PROGRAMADO-->
+            <div class="vehiculo pt-5 p-4">
+                <!--id que representa cada carro-->
+                <img id="vehiculo" src="../Reto6/img/gris.png" alt="vehiculo con color especifico" class="img-fluid">
+            </div>
+            <h4> Seleccione el color favorito </h4>
+    
+            <div class="col-12 mb-3">
+                <button class="btncirculos" style="background-color: #a90d1a;" onclick="c1()"></button>
+                <button class="btncirculos" style="background-color: blue;" onclick="c2()"></button>
+                <button class="btncirculos" style="background-color: rgb(209, 209, 209);" onclick="c3()"></button>
+                <button class="btncirculos" style="background-color: #cc6336;" onclick="c4()"></button>
+                <button class="btncirculos" style="background-color: #9bd107;" onclick="c5()"></button>
+                <button class="btncirculos" style="background-color: #655d84;" onclick="c6()"></button>
+            </div>
+            <h5 id="color">SUPER GREY II (040)</h5>
+    
+        </section>
 
         <footer class="container-fluid">
             <ul class="copyright">
                 <li>&copy;Tarea 3</li><li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
             </ul>
-        </footer>
-        
+        </footer> 
+
+        <script src="../Reto6/index.js"></script>
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

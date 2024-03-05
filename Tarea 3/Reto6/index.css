@@ -1,0 +1,75 @@
+
+
+
+.banner {
+    background-image: url("../Reto6/img/banner.jpg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*botones circulares de los colores*/
+
+.btncirculos {
+    padding: 15px;
+    border: none;
+    /*distancia entre ellos*/
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.img img {
+    width: 900%;
+}
+
+.img {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.info {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.info h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.info3 {
+    box-shadow: 3px 3px 10px #4d4d4d;
+    border-radius: 10px;
+    background-color: rgb(238, 238, 238);
+    padding: 40px 20px;
+    border: solid rgb(180, 180, 180) 1px;
+}
+
+.info2 {
+    padding: 10px 80px;
+}
+
+h3 {
+    font-size: 35px;
+    color: rgb(223, 9, 9);
+}
+
+.button1 {
+    background-color: gray;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    margin: 0 6px;
+}
+
+.button2 {
+    background-color: #21bd5c;
+    color: white;
+    padding: 10px 19px;
+    border: none;
+    margin: 0 6px;
+}
+
+
+
+

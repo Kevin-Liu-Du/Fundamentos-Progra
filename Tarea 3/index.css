@@ -8,10 +8,9 @@ body {
 .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 0.5px;
     color: #000;
     font-family: 'Roboto', sans-serif;
-    font-size: 1px;
 }
 
 .optmenu {
@@ -63,7 +62,7 @@ body {
 /*-------------------------------------------------------------------------------------*/
 /* Estilos para el footer */
 footer.container-fluid {
-    position: fixed; /* Fijar el footer en la parte inferior */
+    position: relative; /* Fijar el footer en la parte inferior */
     bottom: 0; /* Colocar el footer al final de la página */
     width: 100%; /* Ancho completo del footer */
     display: flex; /* Usar flexbox para centrar verticalmente el contenido */
@@ -71,6 +70,10 @@ footer.container-fluid {
     align-items: center; /* Centrar verticalmente el contenido */
     padding: 20px 0; /* Espaciado interior del footer */
     z-index: 9999; /* Asegurar que el footer esté por encima de otros elementos */
+}
+
+a {
+    font-weight: bolder;
 }
 
 footer.container-fluid ul {

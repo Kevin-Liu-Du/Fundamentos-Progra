@@ -74,11 +74,219 @@
             </div>
         </nav>
 
+        <header class="container-fluid p-0">
+            <div class="row sct-header align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-1">Encuesta</h1>
+                </div>
+            </div>
+        </header>
+    
+    
+    
+    
+        <section class="container-fluid pt-5 sct-content">
+            <div class="row">
+                <div class="col-1 text-center"></div>
+                <div class="col-10 text-center">
+                    <h2>Encuesta para evaluación del desempeño docente</h2>
+                    <p>
+                        Ingrese el nombre del profesor que va evaluar.
+                    </p>
+    
+                    <p>
+                        <strong>Rubros evaluativos:</strong> "Nunca" = 1, "Casi nunca" = 2, "Aveces" = 3, "Casi Siempre" = 4, "Siempre" = 5,
+                    </p>
+                </div>
+                <div class="col-1 text-center"></div>
+                <hr>
+            </div>
+        </section>
+    
+    
+    
+    
+    
+        <!-- section form-->
+        <div class="row container-fluid">
+    
+            <div class="col-1"></div>
+            <div class="col-8">
+    
+                <form id="encuesta">
+    
+                    <div class="pt-3">
+                        <label for="charla">Nombre del profesor:</label>
+                        <input type="text" id="charla" class="form-control">
+                    </div>
+
+                    <div class="pt-2 display-5">El profesor o profesora...</div>
+    
+                    <div id="pregunta1" class="pt-4">
+                        <div>
+                            <legend for="pregunta1">Comunica sus ideas de forma clara y precisa.</legend>
+                        </div>
+                        <div>
+                            <input type="radio" id="a" value="1" name="pregunta1">
+                            <label for="r1">Nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="b" value="2" name="pregunta1">
+                            <label for="r1">Casi nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="c" value="3" name="pregunta1">
+                            <label for="r1">A veces</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="d" value="4" name="pregunta1">
+                            <label for="r1">Casi siempre</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="e" value="5" name="pregunta1">
+                            <label for="r1">Siempre</label>
+                        </div>
+                    </div>
+    
+    
+                    <div id="pregunta2" class="pt-4">
+                        <div>
+                            <legend for="pregunta2">Inicia y termina sus clases puntualmente.</legend>
+                        </div>
+                        <div>
+                            <input type="radio" id="f" value="1" name="pregunta2">
+                            <label for="r2">Nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="g" value="2" name="pregunta2">
+                            <label for="r2">Casi nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="h" value="3" name="pregunta2">
+                            <label for="r2">A veces</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="i" value="4" name="pregunta2">
+                            <label for="r2">Casi siempre</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="j" value="5" name="pregunta2">
+                            <label for="r2">Siempre</label>
+                        </div>
+                    </div>
+    
+                    <div id="pregunta3" class="pt-4">
+                        <div>
+                            <legend for="pregunta3">Explica los temas del programa y atiende dudas de manera clara y precisa.</legend>
+                        </div>
+                        <div>
+                            <input type="radio" id="k" value="1" name="pregunta3">
+                            <label for="r3">Nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="l" value="2" name="pregunta3">
+                            <label for="r3">Casi nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="m" value="3" name="pregunta3">
+                            <label for="r3">A veces</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="n" value="4" name="pregunta3">
+                            <label for="r3">Casi siempre</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="o" value="5" name="pregunta3">
+                            <label for="r3">Siempre</label>
+                        </div>
+                    </div>
+    
+    
+                    <div id="pregunta4" class="pt-4">
+                        <div>
+                            <legend for="pregunta4">Desarrolla el curso de manera ordenada y cubriendo los objetivos planteados.</legend>
+                        </div>
+                        <div>
+                            <input type="radio" id="p" value="1" name="pregunta4">
+                            <label for="r4">Nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="q" value="2" name="pregunta4">
+                            <label for="r4">Casi nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="r" value="3" name="pregunta4">
+                            <label for="r4">A veces</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="s" value="4" name="pregunta4">
+                            <label for="r4">Casi siempre</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="t" value="5" name="pregunta4">
+                            <label for="r4">Siempre</label>
+                        </div>
+                    </div>
+    
+    
+                    <div id="pregunta5" class="pt-4">
+                        <div>
+                            <legend for="pregunta5">Muestra interés por el desempeño de los/as estudiantes.</legend>
+                        </div>
+                        <div>
+                            <input type="radio" id="u" value="1" name="pregunta5">
+                            <label for="r5">Nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="w" value="2" name="pregunta5">
+                            <label for="r5">Casi nunca</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="x" value="3" name="pregunta5">
+                            <label for="r5">A veces</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="y" value="4" name="pregunta5">
+                            <label for="r5">Casi siempre</label>
+                        </div>
+    
+                        <div>
+                            <input type="radio" id="z" value="5" name="pregunta5">
+                            <label for="r5">Siempre</label>
+                        </div>
+                    </div>
+    
+                    <div class="pt-5">
+                        <input type="button" value="Calcular" id="btnCalcular">
+                        <input type="button" value="Limpiar" id="btnLimpiar" onclick="btnlimpiar()">
+                    </div>
+    
+                </form>
+    
+            </div>
+    
+        </div>
+    
+        <div class="pt-5"></div>
+
         <footer class="container-fluid">
             <ul class="copyright">
                 <li>&copy;Tarea 3</li><li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
             </ul>
         </footer> 
+
+        <script src="../Reto9/index.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>

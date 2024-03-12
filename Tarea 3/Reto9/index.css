@@ -1,0 +1,74 @@
+
+
+html {
+    font-size:18px;
+}
+body {
+    overflow-x: hidden;
+    font-family: 1.2rem;
+}
+
+
+section {
+ color: #000;
+ font-family: 'Montserrat', sans-serif;
+}
+
+div {
+ font-family: 'Montserrat', sans-serif;
+}
+
+header {
+background-color: #919191;
+ background-size: cover;
+ min-height: 200px;
+ width: 100%;
+ color: #fff;
+ background-position: center;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+h1 {
+margin-top: 50px;
+ 
+}
+
+
+
+h2 {
+ color: #AEAEAE !important;
+
+}
+
+
+
+h3 {
+ color: #574AE2;
+ font-size: 22px!important;
+ font-weight: 700!important;
+}
+
+#btnCalcular,
+#btnLimpiar {
+ border-radius: 5px;
+ border: none;
+ background-color: #575757;
+ color: black !important;
+ margin-left: 10px;
+ padding: 6px 12px;
+}
+
+
+
+.cursor {
+ cursor: pointer;
+}
+
+
+
+
+

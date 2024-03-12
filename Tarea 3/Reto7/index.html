@@ -81,7 +81,7 @@
     
     
         <section class="container bg-light">
-    
+
             <div class="row">
     
                 <div class="col-md-6 col-lg-6">
@@ -94,13 +94,13 @@
     
     
                 <div class="col-md-6 col-lg-6">
-                    <p class="pt-5">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at imperdiet tellus. Vestibulum rutrum feugiat nunc. Phasellus fermentum ultricies ultricies. Quisque luctus mauris odio, at porta sapien faucibus vel. Sed hendrerit tortor eget nibh lobortis
-                        volutpat. Aenean non magna euismod, congue ipsum at, posuere diam. Quisque maximus aliquam tellus sit amet auctor. Morbi justo nulla, ornare vel dictum non, tristique at ante. Sed vel lacus vel turpis viverra ullamcorper.
+                    <p class="pt-5" style="text-align: justify;">
+                        El Lamborghini Veneno es una obra maestra de la ingeniería automotriz y el diseño extravagante. Presentado por primera vez en el Salón del Automóvil de Ginebra en 2013 para celebrar el 50 aniversario de Lamborghini, el Veneno dejó una impresión indeleble en la industria del automóvil y en los corazones de los entusiastas.
+
+                        Este superdeportivo de edición limitada, del cual solo se fabricaron cinco unidades, lleva el nombre de un toro legendario que mató al torero José Sánchez Rodríguez en 1914. Al igual que su homónimo, el Veneno encarna fuerza, poder y agresividad en su diseño y desempeño.
                     </p>
-                    <p class="">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at imperdiet tellus. Vestibulum rutrum feugiat nunc. Phasellus fermentum ultricies ultricies. Quisque luctus mauris odio, at porta sapien faucibus vel. Sed hendrerit tortor eget nibh lobortis
-                        volutpat. Aenean non magna euismod, congue ipsum at, posuere diam. Quisque maximus aliquam tellus sit amet auctor. Morbi justo nulla, ornare vel dictum non, tristique at ante. Sed vel lacus vel turpis viverra ullamcorper.
+                    <p class="" style="text-align: justify;">
+                        Desde el primer vistazo, el Veneno es impactante. Su apariencia radical está marcada por ángulos afilados, líneas aerodinámicas y una carrocería esculpida que parece salida de un avión de combate. Cada detalle, desde las tomas de aire hasta los alerones, está diseñado para mejorar la aerodinámica y maximizar el rendimiento.
                     </p>
                 </div>
             </div>
@@ -114,11 +114,11 @@
         
         <!-- AQUI VA CODIGO GENERADO -->
         <map name="image-map">
-            <area target="" alt="Click por favor" title="Click por favor" href="" coords="1401,691,42" shape="circle" class="cursor" id="r1">
-            <area target="" alt="Click por favor" title="Click por favor" href="" coords="1145,909,41" shape="circle" class="cursor" id="r2">
-            <area target="" alt="Click por favor" title="Click por favor" href="" coords="893,507,37" shape="circle" class="cursor" id="r3">
-            <area target="_blank" alt="Ingresar al sitio web" title="Ingresar al sitio web" href="https://www.lamborghini.com/es-en/historia/veneno-roadster" coords="664,397,37" shape="circle">
-            <area target="" alt="Ingresar al sitio web" title="Ingresar al sitio web" href="https://www.lavanguardia.com/motor/vehiculos/coches/20211212/7921617/exclusivo-lamborghini-veneno-roadster.html" coords="418,319,34" shape="circle">
+            <area target="_blank" alt="Click por favor" title="Click por favor" href="" coords="1399,691,47" id="r0" shape="circle">
+            <area target="_blank" alt="Click por favor" title="Click por favor" href="" coords="1147,908,47" id="r1" shape="circle">
+            <area target="_blank" alt="Click por favor" title="Click por favor" href="" coords="892,508,47" id="r2" shape="circle">
+            <area target="_blank" alt="Click por favor" title="Click por favor" href="" coords="664,399,43" id="r3" shape="circle">
+            <area target="_blank" alt="Click por favor" title="Click por favor" href="" coords="418,317,46" id="r4" shape="circle">
         </map>
 
         <footer class="container-fluid">
@@ -126,35 +126,37 @@
                 <li>&copy;Tarea 3</li><li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
             </ul>
         </footer> 
-
+    
         <!-- permite la interactividad del mapeo interactivo-->
-
+    
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
-
-
-        <script src="../Reto7/jquery.rwdImageMaps.min.js"></script>
-
-
+    
+    
+        <script src="js/jquery.rwdImageMaps.min.js"></script>
+    
+        <!-- Permite que los mapas de imágenes se utilicen en un diseño receptivo al recalcular las coordenadas del área para que 
+        coincidan con el tamaño real de la imagen al cargar y cambiar el tamaño de la ventana-->
+        <!-- el plugin se aplicará automáticamente a todas las imágenes con el atributo usemap y hará que los mapas de imágenes sean responsivos.-->
+    
     <!-- activar la lbreria-->
         <script>
             $(document).ready(function() {
                 $('img[usemap]').rwdImageMaps();
             });
         </script>
-
-
-
-
-    <!-- interactividad Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- programacion -->
-    <script src="../Reto7/index.js"></script>
-
-    <!-- libreria desplegables -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-
+    
+    
+    
+    
+        <!-- interactividad Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+        <!-- programacion -->
+        <script src="js/index.js"></script>
+    
+        <!-- libreria desplegables -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
 
     </body>

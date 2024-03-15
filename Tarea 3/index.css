@@ -60,6 +60,29 @@ body {
 }
 
 /*-------------------------------------------------------------------------------------*/
+
+.banner-section {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    background-position: center;
+    background-image: url('cenfo.png');
+    background-color: white;
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);;
+}
+
+.espacio {
+    padding: 300px 0;
+}
+
+h1{
+    font-weight: bolder;
+}
+
 /* Estilos para el footer */
 footer.container-fluid {
     position: relative; /* Fijar el footer en la parte inferior */

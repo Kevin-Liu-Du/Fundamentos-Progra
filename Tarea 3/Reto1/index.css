@@ -29,7 +29,7 @@ a {
 /* casilla de usuario y contrasena*/
 a:hover {
     color: #0063be;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 /*boton de recuerdame*/

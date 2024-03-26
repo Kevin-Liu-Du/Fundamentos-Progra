@@ -1,0 +1,64 @@
+    body {
+        overflow-x: hidden;
+    }
+    /*width: 2500px;
+        height: 790px;
+        height: 100vh
+    */
+    
+    #container_principal {
+        width: 100%px;
+        height: 650px;
+    }
+    
+    .cursor {
+        cursor: pointer;
+    }
+    
+    header {
+        padding: 30px;
+        width: 100%;
+    }
+    
+/*---------------------------------------------Estilos para el footer------------------------------------*/
+footer.container-fluid {
+    position: relative; /* Fijar el footer en la parte inferior */
+    bottom: 0; /* Colocar el footer al final de la página */
+    width: 100%; /* Ancho completo del footer */
+    display: flex; /* Usar flexbox para centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 20px 0; /* Espaciado interior del footer */
+    z-index: 9999; /* Asegurar que el footer esté por encima de otros elementos */
+    padding-top: 20px;
+}
+
+a {
+    font-weight: bolder;
+}
+
+footer.container-fluid ul {
+    list-style: none; /* Eliminar los estilos de lista predeterminados */
+    margin: 0; /* Eliminar el margen */
+    padding: 0; /* Eliminar el relleno */
+}
+
+footer.container-fluid ul li {
+    display: inline; /* Mostrar los elementos de lista en línea */
+    margin: 0 10px; /* Agregar un margen entre los elementos de lista */
+    color: #000; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+footer.container-fluid ul li a {
+    color: #000; /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+}
+
+footer.container-fluid ul li a:hover {
+    color: #00469B;
+}
+    
+.fondo {
+    background-color: #B9ACAA;
+}

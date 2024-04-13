@@ -39,7 +39,11 @@ option {
     }
 }
 
+.linea {
+    border-bottom: 1px solid red;
+}
 
+/*enceusta*/
 
 .info{
     padding: 100px 50px 80px 60px;
@@ -95,7 +99,7 @@ p{
 }
 
 
-
+/*enceusta*/
 
 
 /************ TESTIMONIAL  ***************/

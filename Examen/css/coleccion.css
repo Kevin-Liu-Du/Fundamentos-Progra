@@ -2,6 +2,12 @@ model-viewer {
     background-color: #A9A9A9
 }
 
+.titulonosotros h2 {
+    font-family: montserrat, sans-serif; 
+    text-transform: uppercase;
+    font-size: 65px;
+}
+
 .seccionInscripcion {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/garaje1.jpg");
     background-repeat: no-repeat;
@@ -17,4 +23,23 @@ model-viewer {
     padding-top: 100px;
 }
 
-/*combo simple*/
+
+.email {
+    width: 200px; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    outline: none;
+}
+
+.botonenviar {
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    font-size: 16px; 
+    font-weight: bold;
+}

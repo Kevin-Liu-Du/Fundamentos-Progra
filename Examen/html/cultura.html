@@ -1,64 +1,330 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bootstrap demo</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<head>
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <!-- testimonial hojas de estilo  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
 
         <link rel="stylesheet" href="../css/cultura.css">
+        <link href="../css/inicio.css" rel="stylesheet">
+
+        <link rel="icon" href="../img/favicon.png">
 
 
-    </head>
-    <body>
-        <header class="container-fluid banner1">
-            <div class="text-center">
-                <h5 class="display-6 text-white">Reto 4</h5>
-                <h1 class="display-2 text-white">Carros hiperdeportivos</h1>
+    <!-- 
+    <link href="css/jquery.timepicker.css" rel="stylesheet">
+    -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fondo1 fixed-top" style="font-family: roboto, san sans-serif;">
+
+        <div class="container">
+
+            <a class="navbar-brand logo" href="index.html">
+                <a class="navbar-brand text-light" href="#"><i class="ri-steering-line text-light"></i>MotorMajesty Hub</a>
+            </a>
+
+            <!-- Menu hamburgesa -->
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <!-- estilos de menu: mx-auto ml-auto mr-auto-->
+                <!-- centrar opciones: text-center -->
+                <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/servicios.html">Colección</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/beneficios.html">Especial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/miembros.html">Tecnología</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/blog.html">Cultura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/contactos.html">Contactos</a>
+                    </li>
+                    <!--cierre de listado-->
+                </ul>
             </div>
-        </header>
+            <!--Cierre del contenedor-->
+        </div>
+        <!--Cierre del menu-->
+    </nav>
 
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 d-flex align-items-center">
-                        <p class="container text-left pt-5 formato1">
-                            Los hiperdeportivos son automóviles de alto rendimiento diseñados para alcanzar velocidades extremadamente altas y ofrecer un manejo excepcional en carreteras y circuitos. Estos vehículos suelen destacarse por su potencia, diseño aerodinámico y tecnología de vanguardia. Generalmente, están equipados con motores de alto rendimiento, chasis ligeros y sistemas avanzados de suspensión y frenado para proporcionar un rendimiento excepcional en términos de velocidad, aceleración y manejo. Ejemplos emblemáticos de hiperdeportivos incluyen el Bugatti Chiron, el Koenigsegg Jesko, el Pagani Huayra y el McLaren P1, entre otros. Estos automóviles suelen ser producidos en cantidades limitadas y están destinados a entusiastas adinerados y coleccionistas de automóviles que buscan lo último en rendimiento y exclusividad.
-                        </p>
-                    </div>
-                    <div class="col-md-12 col-lg-6">
-    
-                        <select id="foto" class="mt-5">  
-            <option disabled hidden selected>Seleccione una opción</option>
-            <option value="1">Koenigsegg Jesko</option>
-            <option value="2">Bugatti Chiron</option>
-            <option value="3">Pagani Huayra Roadster</option>
-            <option value="4">Aston Martin Valkyrie</option>
-            </select>
-                        <div id="resultado" class="resultado img-fluid"></div>
-                        <p id="descripcion" class="text-left formato1"></p>
-                    </div>
+    <header class="container-fluid banner1">
+        <div class="container pt-5" style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+            <h2 class="text-lefttitulo3 text-white pt-5" style="font-size: 65px;">Conocimientos</h2>
+            <p class="text-white">¿Que tanto sabes sobre los hiperdeportivos?</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container text-white">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 d-flex align-items-center">
+                    <p class="container text-left pt-5 formato1">
+                        Los hiperdeportivos son automóviles de alto rendimiento diseñados para alcanzar velocidades extremadamente altas y ofrecer un manejo excepcional en carreteras y circuitos. Estos vehículos suelen destacarse por su potencia, diseño aerodinámico y tecnología de vanguardia. Generalmente, están equipados con motores de alto rendimiento, chasis ligeros y sistemas avanzados de suspensión y frenado para proporcionar un rendimiento excepcional en términos de velocidad, aceleración y manejo. Ejemplos emblemáticos de hiperdeportivos incluyen el Bugatti Chiron, el Koenigsegg Jesko, el Pagani Huayra y el McLaren P1, entre otros. Estos automóviles suelen ser producidos en cantidades limitadas y están destinados a entusiastas adinerados y coleccionistas de automóviles que buscan lo último en rendimiento y exclusividad.
+                    </p>
+                </div>
+                <div class="col-md-12 col-lg-6">
+
+                    <select id="foto" class="mt-5">  
+        <option disabled hidden selected>Seleccione una opción</option>
+        <option value="1">Koenigsegg Jesko</option>
+        <option value="2">Bugatti Chiron</option>
+        <option value="3">Pagani Huayra Roadster</option>
+        <option value="4">Aston Martin Valkyrie</option>
+        </select>
+                    <div id="resultado" class="resultado img-fluid"></div>
+                    <p id="descripcion" class="text-left formato1"></p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <script>
-            //activa la funcion al cargar la pagina web
-            window.onload = function() {
-                //funcion que permite elegir la foto
-                document.getElementById('foto').onchange = function(e) {
-                    //guarda el destino o valor de la foto en una variable 
-                    n = e.target.value;
-                    //expresion en variable que busca las fotos dentro de la carpeta imagenes JPG
-                    var archivo = "url('../img/img" + n + ".jpg')";
-                    //envia la foto al lugar respectivo (id llamado resultado)
-                    //la variable archivo almaceno la imagen elegida por el usuario
-                    document.getElementById("resultado").style.backgroundImage = archivo;
+    <section class="container text-white">
+        <div class="instrucciones text-center pt-5">
+            <h1>Realice la siguiente encuesta</h1>
+            <p class="pt-3">Esta encuesta se realiza con el fin de obtener su opinion personal acerca del servicio brindado por parte de nuestro hotel,
+                <br> le agradecemos que se tome unos minutos para realizarla.</p>
+        </div>
+
+        <div class="encuesta">
+
+            <!-- Inicio del formulario -->
+            <form action="" id="formulario" name="formulario">
+                <div class="row">
+
+                    <!-- preguntas-->
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="inputs mb-3">
+                            <label for="pregunta1" class="colorLabel">1. Que es lo que mas destacaria durante la estadia en nuestro hotel?</label><br>
+                            <input type="text" id="r1" class="form-control mt-2" required>
+
+                            <label for="pregunta2" class="mt-3 colorLabel">2. Que es lo primero que recomendarias a alguien para venir a nuestro hotel?</label><br>
+                            <input type="text" id="r2" class="form-control mt-2" required>
+                        </div>
+                    </div>
+
+                    <!-- radios -->
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="radios">
+                            <label for="opinion" class="mb-2 colorLabel">3. Es probable que nos vuelva a visitar?</label><br>
+                            <input type="radio" id="radio1" name="opinion" value="Si" required> Si
+                            <br>
+                            <div class="pt-2"></div>
+                            <input type="radio" id="radio2" name="opinion" value="No"> No
+                            <br>
+                            <label for="opinion" class="mb-2 mt-3 colorLabel">4. Como califica la atencion que le dieron?</label><br>
+                            <input type="radio" id="radio3" name="opinion2" value="Buena" required> Buena
+                            <br>
+                            <div class="pt-2"></div>
+                            <input type="radio" id="radio4" name="opinion2" value="Regular"> Regular
+                            <br>
+                            <div class="pt-2"></div>
+                            <input type="radio" id="radio5" name="opinion2" value="Mala"> Mala
+                            <br>
+                        </div>
+                    </div>
+
+                    <!-- checkbox -->
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="checks">
+                            <label for="opinion" class="mb-2 colorLabel">5. Marque las opciones que destaque.</label><br>
+                            <input type="checkbox" id="calidad" class="checkbox" name="calidad"> Calidad
+                            <input type="checkbox" id="atencion" class="checkbox" name="atencion"> Atencion
+                            <input type="checkbox" id="servicio" class="checkbox" name="servicio"> Servicio
+
+                            <label for="opinion" class="mb-2 mt-3 colorLabel">6. Como se entero de nuestro hotel?<br>Marque 1 o más opciones.</label><br>
+                            <input type="checkbox" id="radio" class="checkbox"> Radio
+                            <input type="checkbox" id="youtube" class="checkbox"> Youtube
+                            <input type="checkbox" id="facebook" class="checkbox"> Facebook <br>
+                            <input type="checkbox" id="television" class="checkbox mt-2"> Television
+                            <input type="checkbox" id="otro" class="checkbox mt-2"> Otro
+                        </div>
+                    </div>
+                </div>
+
+                <!-- boton ENVIAR -->
+                <div class="botonEnviar">
+                    <input type="button" value="Enviar" class="boton" onclick="evaluarEncuesta()">
+                    <input type="button" value="Limpiar" class="boton" onclick="limpiarFormulario()">
+
+                </div>
+
+                <!--Final del formulario -->
+            </form>
+
+
+            <!-- resultados al cliente en la pagina web-->
+            <div class="Resultados">
+                <h2 class="pt-3 pb-3" id="res0"></h2>
+                <p id="res1"></p>
+                <p id="res2"></p>
+                <p id="res3"></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid">
+        <!-- SECCION TESTIMOMINAL -->
+        <div class="container">
+            <section class="">
+                <div class="container-sm-6 pt-5">
+                    <h2 class="titulos text-center">Testimoniales</h2>
+                    <p class="objetivo">
+                        Contar con testimonios de personas que han aprobado los servicios o productos de una empresa y que han tenido una buena experiencia, es un elemento muy potente y diferenciador para lograr que otros hagan lo mismo. Su gran poder de atracción es que aportan
+                        contenido, funcionan como una fuente de resolución de problemas y se convierten en una prueba de la fiabilidad del 100%.
+                    </p>
+    
+                    <div class="pt-5"></div>
+    
+    
+                    <div class="testimonials_container">
+    
+                        <!-- web avatars: https://www.freepik.es/search?format=search&query=avatars&type=vector -->
+    
+                        <!-- owl-theme centra las flechas de una vez-->
+                        <div class="testimonials owl-carousel owl-theme">
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Angie Vargas</h3>
+                                <p>Me inscribí al curso de diseño web y ha sido increíble.</p>
+                            </div>
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Jason Villanueva</h3>
+                                <p>Decidí llevar el curso de Power BI para crecer profesionalmente.</p>
+                            </div>
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Keyleb Smith</h3>
+                                <p>Estoy en el curso de Microsoft SQL y me encanta.</p>
+                            </div>
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Laura Solano</h3>
+                                <p>Entré al curso de programación con JavaScript y he aprendido mucho.</p>
+                            </div>
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/3222422/pexels-photo-3222422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Daniel Quirós</h3>
+                                <p>Estoy en el curso de electrónica y estoy muy emocionado.</p>
+                            </div>
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Noah Calvo</h3>
+                                <p>Recién ingrese al curso de Excel y me ha ayudado mucho.</p>
+                            </div>
+                            <div class="item">
+                                <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+                                <h3>Karina Muñoz</h3>
+                                <p>Recién ingrese al curso de Excel y me ha ayudado mucho.</p>
+                            </div>
+                        </div>
+    
+    
+    
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <hr>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+
+
+    <!-- CARGA JS SCRIPT TESTIMONIAL -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js " integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js " integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    
+    <!-- CONFIGURACION TESTIMONIAL JS -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+
+            //ciclo
+            loop: true,
+
+            //margen entre las fotos de personas
+            margin: 12,
+
+            //navegacion con flechas con valor true
+            nav: true,
+
+            //agrega radios de navegacion con valor true
+            dots: false,
+
+            //se autoejecutan al iniciar con valor true
+            autoplay: true,
+
+            //parte responsive de los dispositivos
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
                 }
             }
-        </script>
+        })
+    </script>
 
-        <script src="../js/combosimple.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+
+    <script>
+        //activa la funcion al cargar la pagina web
+        window.onload = function() {
+            //funcion que permite elegir la foto
+            document.getElementById('foto').onchange = function(e) {
+                //guarda el destino o valor de la foto en una variable 
+                n = e.target.value;
+                //expresion en variable que busca las fotos dentro de la carpeta imagenes JPG
+                var archivo = "url('../img/img" + n + ".jpg')";
+                //envia la foto al lugar respectivo (id llamado resultado)
+                //la variable archivo almaceno la imagen elegida por el usuario
+                document.getElementById("resultado").style.backgroundImage = archivo;
+            }
+        }
+    </script>
+
+    <script src="../js/combosimple.js"></script>
+
+    <!-- cargar la programacion JS-->
+    <script src="../js/encuestaweb.js"></script>
+
+    <!--Libreria de la nueva alerta-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+</body>
+
 </html>

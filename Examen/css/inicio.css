@@ -1,0 +1,139 @@
+/*============================================================ */
+body {
+    background-color: hsl(219, 4%, 4%);
+}
+/*============================================================ */
+/*********************  MENU NAV ******************************/
+
+.navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1px;
+    background-color: #232323;
+}
+
+.optmenu {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    transition: all 1s solid;
+    border-radius: 20px;
+}
+
+.optmenu:hover {
+    background-color: #A9A9A9;
+    transition: all 1s solid;
+    border-radius: 20px;
+}
+
+/*active es cuendo le das click*/
+.optmenu:active {
+    background-color: red;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+.navbar-toggler {
+    background-color: #A9A9A9;
+    border-radius: 40px;
+}
+
+.navbar-toggler:hover {
+    background-color: red;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: transparent;
+}
+
+/* PERSONALIZACION MENU HAMBURGUESA */
+
+/* PERSONALIZACION lineas HAMBURGUESA */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}         
+.custom-toggler .navbar-toggler-icon:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+  /*********************  MENU NAV ******************************/
+
+
+
+.banner1 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(50vh);
+    background-position: center;
+    background-image: url('../img/garaje.jpg');
+    background-blend-mode: multiply;
+}
+
+.container-fluid1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.banner2 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(50vh);
+    background-position: center;
+    background-image: url('../img/garaje.jpg');
+    background-blend-mode: multiply;
+}
+
+.container-fluid3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+
+
+/*=====================================Estilo para footer======================= */
+footer.container-fluidfooter {
+    position: relative; /* Fijar el footer en la parte inferior */
+    bottom: 0; /* Colocar el footer al final de la página */
+    width: 100%; /* Ancho completo del footer */
+    display: flex; /* Usar flexbox para centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+    align-items: center; /* Centrar verticalmente el contenido */
+    padding: 20px 0; /* Espaciado interior del footer */
+    z-index: 9999; /* Asegurar que el footer esté por encima de otros elementos */
+    background-color: transparent; /* Color de fondo del footer */
+}
+
+footer.container-fluidfooter ul {
+    list-style: none; /* Eliminar los estilos de lista predeterminados */
+    margin: 0; /* Eliminar el margen */
+    padding: 0; /* Eliminar el relleno */
+}
+
+footer.container-fluidfooter ul li {
+    display: inline; /* Mostrar los elementos de lista en línea */
+    margin: 0 10px; /* Agregar un margen entre los elementos de lista */
+    color: #fff; /* Color del texto */
+    font-size: 14px; /* Tamaño de fuente */
+}
+
+footer.container-fluidfooter ul li a {
+    color: #fff; /* Color del texto del enlace */
+    text-decoration: none; /* Eliminar el subrayado del enlace */
+    font-weight: bold; /* Peso de la fuente en negrita */
+}
+
+footer.container-fluidfooter ul li a:hover {
+    color: #00469B; /* Color del texto del enlace al pasar el mouse */
+}
+
+/*=====================================Estilo para footer======================= */

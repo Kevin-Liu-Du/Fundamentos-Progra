@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MotorMajesty Club</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link href="../css/nosotros.css" rel="stylesheet">
+        <link href="../css/inicio.css" rel="stylesheet">
+
+        <link rel="icon" href="../img/favicon.png">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fondo1 fixed-top" style="font-family: roboto, san sans-serif;">
+
+            <div class="container">
+    
+                <a class="navbar-brand logo" href="index.html">
+                    <a class="navbar-brand text-light" href="#"><i class="ri-steering-line text-light"></i>MotorMajesty Hub</a>
+                </a>
+    
+                <!-- Menu hamburgesa -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- estilos de menu: mx-auto ml-auto mr-auto-->
+                    <!-- centrar opciones: text-center -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/servicios.html">Colección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/beneficios.html">Especial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/miembros.html">Tecnología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/blog.html">Cultura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/contactos.html">Contactos</a>
+                        </li>
+                        <!--cierre de listado-->
+                    </ul>
+                </div>
+                <!--Cierre del contenedor-->
+            </div>
+            <!--Cierre del menu-->
+        </nav>
+
+        <header class="container-fluid1">
+            <div class="container " style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+                <h2 class="text-lefttitulo3 text-white" style="font-size: 65px;">Historia</h2>
+            </div>
+        </header>
+        <section class="container-fluid2 bannerhistoria">
+            <div class="container text-center text-white pt-5">
+                <div>
+                    <h6 class="text-center text-white pt-5" style="font-family: monserrat, sans-serif; font-size: 30px; font-weight: bolder;">
+                        Filosofía Curatorial del Museo de Automóvil MotorMajesty Club
+                    </h6>
+                    <p style="font-family: lato, sans-serif; font-size: 25.5px;">
+                        "Celebramos la diversidad y la evolución del automovilismo, destacando la belleza e innovación de cada vehículo en nuestra colección. Nuestra misión es inspirar aprecio por el mundo del automóvil y su impacto en la sociedad."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <p class="container pt-3 text-white">
+                    El Museo de Automóvil MotorMajesty Club es un monumento vivo a la pasión por los automóviles que comenzó en 1985 como un modesto sueño compartido por un grupo de apasionados coleccionistas locales. Lo que comenzó como una pequeña exhibición en el centro de la ciudad, pronto se convirtió en un punto de referencia para entusiastas del automovilismo de toda la región. En 1995, gracias al apoyo de la comunidad y generosas donaciones, el museo se trasladó a su ubicación actual, un moderno edificio diseñado para albergar la creciente colección y ofrecer una experiencia única a los visitantes.
+                </p>
+    
+                <div class="row">
+    
+                    <div class="col-md-6">
+                        <!-- lightbox de foto-->
+                        <div class="pt-5">
+                            <!-- activar el modal -->
+                            <!-- myImg representa la imagen -->
+                            <img id="myImg" src="../img/historia.jpg" alt="Inicios de MotorMajesty Club" style="max-width:600px">
+                            <!-- ID modal -->
+                            <div id="modal1" class="modal">
+                                <!-- botón de cierre del modal -->
+                                <div class="close">&times;</div>
+                                <!-- contenido del modal -->
+                                <img class="modal-content" id="img01">
+                                <!-- título del modal -->
+                                <div id="caption"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-md-6">
+    
+                        <p class="container pt-5 text-white" >
+                            Desde entonces, el Museo del Automóvil de Ciudad X ha continuado creciendo y evolucionando, agregando nuevas exhibiciones, programas educativos y eventos especiales para celebrar la rica historia y la innovación continua en el mundo del automóvil. Con una variedad impresionante que abarca desde los primeros modelos de principios del siglo XX hasta los últimos avances en tecnología automotriz, el museo ofrece una experiencia única para aquellos que comparten la pasión por los autos. Hoy en día, el museo sigue siendo un faro de excelencia y un destino imperdible para todos aquellos que deseen sumergirse en la historia y la emoción del automovilismo.
+                        </p>
+                        <div class="pt-3"></div>
+    
+                        <!-- boton para activar el lightbox de vídeo -->
+    
+                        <!-- permite cargar la funcion ejecutar JS -->
+                        <button id="boton" onclick="ejecutar('video','youtube')" class="cursor">Video historial</button>
+                        <!-- permite cargar la funcion ocultar JS -->
+                        <div id="video" class="lightbox" onclick="ocultar('video','youtube')">
+                            <!-- permite poner el tamaño del contenedor del lightbox -->
+                            <div class="lightbox-container">
+                                <!-- permite poner transparente la pantalla -->
+                                <div class="lightbox-content">
+                                    <button onclick="ocultar('video','youtube')" class="lightbox-close cursor">
+                                Cerrar | ✕
+                            </button>
+                                    <!-- permite poner el vídeo responsivo -->
+                                    <div class="video-container">
+                                        <!-- agregar la terminacion ?showinfo=0 para ocultar los vídeos promocionales al final  -->
+                                        <!-- si se activa no funciona los controles del video youtube accelerometer;   -->
+                                        <iframe id="youtube" width="960" height="540" src="https://www.youtube.com/embed/of5VIwfOW6U?si=wwPUqa6X8bZaZzXJ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <p class="container pt-5 text-white" style="text-align: justify;">
+                    El Museo del Automóvil MotorMajesty Club, a lo largo de sus años de existencia, ha sido más que un simple repositorio de automóviles; ha sido un lugar donde las historias cobran vida, donde los recuerdos se preservan y donde la pasión por los autos se comparte con generaciones presentes y futuras. Cada vehículo en exhibición cuenta una historia única, desde los icónicos clásicos que han dejado una marca indeleble en la cultura automotriz hasta los prototipos futuristas que nos muestran hacia dónde se dirige la industria. Este museo no solo es un tributo a la ingeniería y al diseño, sino también un recordatorio de cómo los automóviles han moldeado nuestras vidas y nuestra sociedad a lo largo del tiempo.
+
+                    Con su compromiso continuo con la excelencia, la educación y la preservación del patrimonio automotriz, el Museo del Automóvil de Ciudad X sigue siendo un faro de inspiración para entusiastas del automovilismo de todas las edades y orígenes. Ya sea explorando las exhibiciones históricas, participando en programas educativos interactivos o simplemente disfrutando del ambiente único del museo, cada visita es una oportunidad para sumergirse en la emoción y la belleza de la historia del automóvil. Ven y únete a nosotros en nuestro viaje a través del tiempo, mientras celebramos la innovación, la creatividad y la pasión que han definido el mundo del automovilismo.
+                </p>
+        </section>
+
+        <div class="container-fluid2 bannerhistoria">
+        </div>
+
+        <section>
+                <div class="tab tam1">
+                    <!-- funcion que recibe un controlador de eventos (event) y un ID que representa cada pestaña -->
+                    <button class="tablinks" onclick="opciones(event, 'historia') ">Historia</button>
+                    <button class="tablinks" onclick="opciones(event, 'mision') ">Misión</button>
+                    <button class="tablinks" onclick="opciones(event, 'vision') ">Visión</button>
+                    <button class="tablinks" onclick="opciones(event, 'valores') ">Valores</button>
+                </div>
+    
+                <!-- contenido de las pestañas -->
+                <div id="historia" class="tabcontent">
+                    <h3>MotorMajesty Club</h3>
+                    <p>
+                        El Museo MotorMajesty Club abrió sus puertas en 1985 como un pequeño espacio en el corazón de la ciudad, fundado por un grupo de entusiastas coleccionistas de autos clásicos. Con el tiempo, la creciente colección y el apoyo de la comunidad llevaron al museo a mudarse a su ubicación actual en 1995, donde continúa celebrando la historia y la pasión por los autos a través de exhibiciones, eventos y programas educativos. Hoy, el museo es un destino imperdible para amantes del automovilismo de todas las edades, dedicado a preservar y compartir el legado cultural y tecnológico de los autos.
+                    </p>
+                    <img src="../img/historia.jpg" alt="historia" class="img-fluid" style="width: 400px;">
+                </div>
+    
+                <div id="mision" class="tabcontent">
+                    <h3>MotorMajesty Club</h3>
+                    <p class="text-left ">
+                        En el Museo MotorMajesty Club, nuestra misión es preservar y compartir la rica historia y la pasión por los automóviles para inspirar, educar y entretener a las generaciones presentes y futuras. Nos comprometemos a celebrar la diversidad y la innovación en el mundo del automovilismo, y a proporcionar experiencias significativas que enriquezcan la vida de nuestros visitantes y contribuyan al enriquecimiento cultural de nuestra comunidad.
+                    </p>
+                    <img src="imagenes/mision.png" alt="mision" class="img-fluid">
+                </div>
+    
+                <div id="vision" class="tabcontent">
+                    <h3>MotorMajesty Club</h3>
+                    <p class="text-left ">
+                        Nuestra visión es ser reconocidos como un líder global en la preservación del patrimonio automotriz y en la promoción de la comprensión y el aprecio por la historia y la tecnología de los automóviles. Buscamos ser un centro de excelencia en la investigación, la exhibición y la educación automotriz, donde cada visitante se sienta inspirado y motivado a explorar y aprender sobre el emocionante mundo del automovilismo.
+                    </p>
+                    <img src="imagenes/vision.png" alt="vision" class="img-fluid">
+                </div>
+    
+                <div id="valores" class="tabcontent">
+                    <h3>MotorMajesty Club</h3>
+                    <p class="text-left">
+                        En el Museo Museo MotorMajesty Club, nos guiamos por los siguientes valores fundamentales:
+                    </p>
+                    <div class="pb-3">
+                        <strong>1. Excelencia</strong>: Nos esforzamos por alcanzar la excelencia en todo lo que hacemos, desde la curaduría de nuestras exhibiciones hasta la atención al cliente.
+                    </div>
+                    <div class="pb-3">
+                        <strong>2. Integridad</strong>: Actuamos con integridad en todas nuestras interacciones, manteniendo altos estándares éticos y profesionales en todo momento.
+                    </div>
+                    <div class="pb-3">
+                        <strong>3. Diversidad e Inclusión</strong>: Valoramos la diversidad en todas sus formas y nos esforzamos por crear un ambiente inclusivo donde todas las personas se sientan bienvenidas y respetadas.
+                    </div>
+                    <div class="pb-3">
+                        <strong>4. Innovación</strong>: Abrazamos la innovación y la creatividad en nuestra búsqueda constante de nuevas formas de enriquecer la experiencia del visitante y promover el conocimiento del automovilismo.
+                    </div>
+                    <div class="pb-3">
+                        <strong>5. Compromiso con la Comunidad</strong>: Estamos comprometidos con nuestra comunidad local y global, y buscamos colaborar con socios y partes interesadas para maximizar nuestro impacto positivo en la sociedad.
+                    </div>
+
+                    <img src="imagenes/vision.png" alt="vision" class="img-fluid">
+                </div>
+    
+                <p class="container pt-5 text-white" style="text-align: justify;">
+                    
+                    En conclusión, la historia del Museo MotorMajesty Club es un testimonio vibrante de la pasión, la dedicación y el compromiso de una comunidad unida en su amor por los automóviles. Desde sus humildes comienzos como un pequeño espacio en el corazón de la ciudad hasta convertirse en un destino emblemático para entusiastas del automovilismo de todo el mundo, el museo ha sido un faro de excelencia y un punto de referencia en el mundo del automovilismo. A lo largo de los años, ha celebrado la rica historia y la innovación continua en el mundo del automóvil, inspirando a generaciones de visitantes a explorar y apreciar la belleza y la emoción de los autos. Con su compromiso inquebrantable con la preservación del patrimonio automotriz y su pasión por compartir esa historia con el público, el Museo del Automóvil de Ciudad X continúa siendo un símbolo de la creatividad, la innovación y la ingeniería que han definido el mundo del automovilismo. En cada exhibición, en cada programa educativo y en cada evento especial, el museo sigue contando la historia del automóvil de una manera única y emocionante, celebrando la belleza y la emoción de los autos que han capturado nuestra imaginación y nuestro corazón a lo largo de los años.
+                </p>
+
+                <div class="container-fluid2 bannerhistoria">
+                </div>
+
+    
+                <div class="container text-center pt-5">
+                    <h6 class="text-center text-white" style="font-family: monserrat, sans-serif; font-size: 30px; font-weight: bolder;">
+                    Fotos de los inicios
+                    </h6>
+                    <p>
+                        <!-- cargar la imagen principal del carousel y luego los logos -->
+                        <img src="../img/historia.jpg" name="thumb" class="img-fluid"> <br><br>
+                        <!-- agregar el titulo de las fotos por medio del ID -->
+                        <a href="#" id="titulo" class="text-white">Inicio del Museo</a>
+                    </p>
+                    <p class="pt-5 ">
+                        <!-- Botones Anterior/Siguiente -->
+                        <button class="btn btn-warning btn-lg" onclick="cambiar(-1)">Anterior</button>
+                        <button class="btn btn-light btn-lg" onclick="cambiar(1)">Siguiente</button>
+                    </p>
+                </div>
+    
+                <div class="pt-5 "></div>
+    
+                <!-- cierre del container -->
+            <!-- cierre de la sección -->
+            </div>
+        </section>
+
+        
+
+        <footer class="container-fluidfooter">
+            <ul class="copyright">
+                <li>&copy;Examen</li>
+                <li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
+
+            </ul>
+        </footer>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- cargar la programación del lightbox fotografico -->
+        <script src="../js/lightbox1.js "></script>
+        <!-- cargar la programación del lightbox de vídeo -->
+        <script src="../js/lightbox2.js "></script>
+        <!-- cargar la programación de las pestañas-->
+        <script src="../js/tabs.js "></script>
+        <!-- cargar la programación del carousel pequeño de fotos -->
+        <script src="../js/carousel.js "></script>
+
+    </body>
+</html>

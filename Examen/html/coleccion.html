@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MotorMajesty Club</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link href="../css/coleccion.css" rel="stylesheet">
+        <link href="../css/inicio.css" rel="stylesheet">
+
+        <link rel="icon" href="../img/favicon.png">
+
+        <!--Libreria de iconoes web iconscout-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+        <!--Libreria de Remixicon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fondo1 fixed-top" style="font-family: roboto, san sans-serif;">
+
+            <div class="container">
+    
+                <a class="navbar-brand logo" href="index.html">
+                    <a class="navbar-brand text-light" href="#"><i class="ri-steering-line text-light"></i>MotorMajesty Hub</a>
+                </a>
+    
+                <!-- Menu hamburgesa -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- estilos de menu: mx-auto ml-auto mr-auto-->
+                    <!-- centrar opciones: text-center -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/servicios.html">Colección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/beneficios.html">Especial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/miembros.html">Tecnología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/blog.html">Cultura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/contactos.html">Contactos</a>
+                        </li>
+                        <!--cierre de listado-->
+                    </ul>
+                </div>
+                <!--Cierre del contenedor-->
+            </div>
+            <!--Cierre del menu-->
+        </nav>
+
+
+        <header class="container-fluid1">
+            <div class="container " style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+                <h2 class="text-lefttitulo3 text-white" style="font-size: 65px;">Exhibición sobre ruedas</h2>
+            </div>
+        </header>
+
+        <section>
+            <div class="container" style="overflow: hidden;">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <img src="../img/logoporsche.png" alt="">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <!--carga local 3D-->
+                            <model-viewer src="../assets/porsche_gt3_rs.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Porsche 911 Gt3 RS</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/porsche_911_carrera_4s.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Porsche 911 Carrera 4s</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/porsche_918_.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Porsche 918 Spyder</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="color: white;">
+
+                <div class="row justify-content-center align-items-center pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <img src="../img/logolambo.png" alt="">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <!--carga local 3D-->
+                            <model-viewer src="../assets/revuelto.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Lamborghini Revuelto</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/svj.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Lamborghini Aventador SVJ</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/sian.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Lamborghini Sian</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="color: white;">
+                
+                <div class="row justify-content-center align-items-center pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <img src="../img/mc.png" alt="" class="img-fluid" style="width: 70%;">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <!--carga local 3D-->
+                            <model-viewer src="../assets/senna.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>McLaren Senna</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/p1.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>McLaren P1</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/720.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>McLaren 720s</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="color: white;">
+                
+                <div class="row justify-content-center align-items-center pt-5">
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <img src="../img/koe.png" alt="" class="img-fluid" style="width: 70%;">
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <!--carga local 3D-->
+                            <model-viewer src="../assets/jesko.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Koenigsegg Jesko</h6>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/jeskoab.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Koenigsegg Jesko Absolut</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-white">
+                        <div class="container">
+                            <div class="container">
+                                <!--carga local 3D-->
+                                <model-viewer src="../assets/gemera.glb" poster="" alt="personaje 3D" camera-controls auto-rotate></model-viewer>
+                            </div>
+                            <div class="container pb-3 pt-5" style="font-family: montserrat, sans-serif; font-size: 36px;">
+                                <h6>Koenigsegg Gemera</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="container-fluid2 seccionInscripcion pt-5">
+            <div class="container text-center text-white">
+                <h2 class="pb-5" style="font-family: lato, sans-serif;">Suscríbete para más noticias sobre nuestra colección de carros</h2>
+                <form id="inscription" class="text-center">
+                    <!-- el name es el que se pone en el temaplate de emial.js-->
+                    <input class="email" name="email" id="inscriptionTxt" type="email" placeholder="Tu email" style="width: 200px; padding: 8px; border: 1px solid #ccc; border-radius: 4px; outline: none;">
+                    <input id="btnSend" type="button" value="Enviar" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; transition: background-color 0.3s ease; font-size: 16px; font-weight: bold;">
+                    <p id="mensajeAlert"></p>
+                </form>
+            </div>
+        </section>
+
+
+        <footer class="container-fluidfooter">
+            <ul class="copyright">
+                <li>&copy;Examen</li>
+                <li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
+
+            </ul>
+        </footer>
+    
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script src="../js/inscripcion.js"></script>
+
+        <!-- cargar <model-viewer>  -->
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    </body>
+</html>

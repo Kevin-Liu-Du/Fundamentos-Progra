@@ -1,0 +1,332 @@
+.banner-sectioneventos {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    /*control altura del banner*/
+    height: calc(100vh);
+    background-position: center;
+    background-image: url('../img/eventos.jpg');
+    background-blend-mode: multiply;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.espacio {
+    padding: 120px 0;
+}
+
+.espacio h6{
+    font-family: playfair display, sans-serif; 
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+/*header*/
+/*modal*/
+/* Estilos generales */
+.card {
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: none;
+}
+
+.modal-title {
+    color: #333;
+}
+
+.modal-body {
+    color: #666;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-top: none;
+}
+
+/* Botón de cierre del modal */
+.btn-warning {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #ffca28;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/*modal*/
+
+/*btn*/
+.custom-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: bolder;
+}
+
+.custom-btn:hover {
+    background-color: #dc3545;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bolder;
+}
+/*btn*/
+
+/*form*/
+.sectionForm .containerForm {
+    width: 80%;
+    padding: 20px;
+}
+.sectionForm .containerForm .formRow {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.sectionForm .containerForm .formRow .colForm {
+    position: relative;
+    width: 100%;
+    padding: 0px 10px;
+    margin: 30px 0px 10px;
+    transition: 0.5s;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox input,
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0px 10px;
+    z-index: 1;
+    color: #000;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox .text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0px 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid + .text {
+    left: -10px;
+    top: -35px;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+    background-color: #A9A9A9;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox input:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox input:valid ~ .line {
+    height: 100%;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0px;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox.textarea textarea {
+    height: 100px;
+    resize: none;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus + .text,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid + .text {
+    left: -10px;
+    top: -35px;
+}
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:focus ~ .line,
+.sectionForm .containerForm .formRow .colForm .inputBox textarea:valid ~ .line {
+    height: 100%;
+}
+input[type="submit"] {
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background-color: #A9A9A9;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.alertaRoja{
+    color: red;
+    font-weight: 500;
+    font-size: 18px;
+}
+.alertaVerde{
+    color: green;
+    font-weight: 500;
+    font-size: 18px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar-brand img {
+        width: 68px;
+    }
+    .nav-item a {
+        font-size: 17px;
+    }
+    .seccion h1 {
+        font-size: 55px;
+    }
+    .seccion1 h2 {
+        font-size: 27px;
+    }
+    .seccion2 .tituloSeccion2 {
+        font-size: 45px;
+    }
+    .seccion3 h2 {
+        font-size: 45px;
+    }
+    .seccion4 .tituloSeccion4 {
+        font-size: 45px;
+    }
+    .tituloSeccion5 {
+        font-size: 45px;
+    }
+    footer p {
+        font-size: 15px;
+    }
+    .botonScrollTop {
+        background-color: #fddb59;
+        right: 13px;
+    }
+    .accordion-body video {
+        width: 311px;
+    }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar-brand img {
+        width: 90px;
+    }
+    .nav-item a {
+        font-size: 19px;
+    }
+    .seccion h1 {
+        font-size: 75px;
+    }
+    .seccion1 h2 {
+        font-size: 30px;
+    }
+    .seccion2 .tituloSeccion2 {
+        font-size: 50px;
+    }
+    .seccion3 h2 {
+        font-size: 50px;
+    }
+    .seccion4 .tituloSeccion4 {
+        font-size: 50px;
+    }
+    .tituloSeccion5 {
+        font-size: 50px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    .botonScrollTop {
+        background-color: #fddb59;
+        right: 13px;
+    }
+    .accordion-body video {
+        width: 396px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+    .nav-item a {
+        font-size: 25px;
+    }
+    .seccion h1 {
+        font-size: 85px;
+    }
+    .seccion1 h2 {
+        font-size: 55px;
+    }
+    .seccion2 .tituloSeccion2 {
+        font-size: 65px;
+    }
+    .seccion3 h2 {
+        font-size: 65px;
+    }
+    .seccion4 .tituloSeccion4 {
+        font-size: 65px;
+    }
+    .tituloSeccion5 {
+        font-size: 65px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+    .botonScrollTop {
+        background-color: #fddb59;
+        right: 13px;
+    }
+}

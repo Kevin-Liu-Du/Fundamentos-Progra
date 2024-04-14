@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>MotorMajesty Club</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link href="../css/inicio.css" rel="stylesheet">
+        <link href="../css/experiencias.css" rel="stylesheet">
+
+        <link rel="icon" href="../img/favicon.png">
+
+        <!--Libreria de iconoes web iconscout-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+        <!--Libreria de Remixicon-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg fondo1 fixed-top" style="font-family: roboto, san sans-serif;">
+
+            <div class="container">
+    
+                <a class="navbar-brand logo" href="index.html">
+                    <a class="navbar-brand text-light" href="#"><i class="ri-steering-line text-light"></i>MotorMajesty Hub</a>
+                </a>
+    
+                <!-- Menu hamburgesa -->
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- estilos de menu: mx-auto ml-auto mr-auto-->
+                    <!-- centrar opciones: text-center -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-md-0 text-center">
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/servicios.html">Colección</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/beneficios.html">Especial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/miembros.html">Tecnología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/blog.html">Cultura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-scroll class="nav-link text-white optmenu" aria-current="page" href="html/contactos.html">Experiencias</a>
+                        </li>
+                        <!--cierre de listado-->
+                    </ul>
+                </div>
+                <!--Cierre del contenedor-->
+            </div>
+            <!--Cierre del menu-->
+        </nav>
+
+        <header class="banner-sectioneventos espacio">
+            <div class="container text-center text-white pt-5">
+                <div>
+                    <h6 class="text-center text-white pt-5" >
+                        "Sumérgete en un mundo de velocidad, historia y belleza automotriz. Descubre nuestras emocionantes exhibiciones y reserva tu experiencia hoy mismo."
+                    </h6>
+                </div>
+            </div>
+        </header>
+
+        <section class="container-fluid2">
+            <div class="container" style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+                <h2 class="text-lefttitulo3 text-white pt-5" style="font-size: 65px;">Próximos Eventos</h2>
+                <hr style="color: white;">
+            </div>
+            <div class="container text-center">
+                <hr>
+                <div class="row">
+                    <!--====================================Modal 1=======================================================--> 
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-dark">
+                        <div class="card ">
+                            <img src="../img/verano.jpg" class="img-fluid cursor" alt="Salud Fisica" data-bs-toggle="modal" data-bs-target="#myModal1">
+                            <div class="card-body">
+                                <h5 class="card-title">Exposición de Verano</h5>
+                                <p class="card-text ">
+                                    "La Evolución del Automóvil"
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CONFIGURACION MODAL -->
+                        <div class="modal fade" id="myModal1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <!-- la clase modal-dialog modal-lg al mismo tiempo pone la ventana grande horizontal -->
+                            <!-- la clase modal-dialog-centered centra verticalmente la ventana  -->
+                            <!-- la clase modal-dialog-scrollable permite agregar un scrollvertical largo-->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Exposición de Verano: "La Evolución del Automóvil"</h5>
+                                        <!-- <button type="button" class="cursor" data-bs-dismiss="modal" aria-label="Cerrar">
+                                            <span aria-hidden="true">&times</span>
+                                        </button> -->
+                                    </div>
+                                    <div class="modal-body justificar">
+                                        Sumérgete en la fascinante historia del automóvil mientras exploras nuestra última exposición de verano. Desde los primeros modelos hasta los últimos avances tecnológicos, esta exhibición te llevará en un viaje a través del tiempo.
+                                        <div class="pt-3"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-danger cursor" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--====================================Modal 1=======================================================--> 
+                    <!--====================================Modal 2=======================================================-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-dark">
+                        <div class="card">
+                            <img src="../img/taller.jpg" class="img-fluid cursor" alt="Salud Fisica" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            <div class="card-body">
+                                <h5 class="card-title">Taller de Restauración</h5>
+                                <p class="card-text ">
+                                    Restauración de Autos Clásicos
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CONFIGURACION MODAL -->
+                        <div class="modal fade" id="myModal2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <!-- la clase modal-dialog modal-lg al mismo tiempo pone la ventana grande horizontal -->
+                            <!-- la clase modal-dialog-centered centra verticalmente la ventana  -->
+                            <!-- la clase modal-dialog-scrollable permite agregar un scrollvertical largo-->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Taller de Restauración de Autos Clásicos</h5>
+                                        <!-- <button type="button" class="cursor" data-bs-dismiss="modal" aria-label="Cerrar">
+                                            <span aria-hidden="true">&times</span>
+                                        </button> -->
+                                    </div>
+                                    <div class="modal-body justificar">
+                                        Únete a nuestros expertos en restauración para aprender los secretos detrás de la preservación y restauración de autos clásicos. Descubre técnicas prácticas y consejos útiles para mantener viva la historia del automóvil.
+                                        <div class="pt-3"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-danger cursor" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--====================================Modal 2=======================================================--> 
+                    <!--====================================Modal 3=======================================================-->
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-dark">
+                        <div class="card">
+                            <img src="../img/innovacion.jpg" class="img-fluid cursor" alt="Salud Fisica" data-bs-toggle="modal" data-bs-target="#myModal3">
+                            <div class="card-body">
+                                <h5 class="card-title">Conferencia</h5>
+                                <p class="card-text ">
+                                    "Innovaciones en la Automotriz"
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CONFIGURACION MODAL -->
+                        <div class="modal fade" id="myModal3" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <!-- la clase modal-dialog modal-lg al mismo tiempo pone la ventana grande horizontal -->
+                            <!-- la clase modal-dialog-centered centra verticalmente la ventana  -->
+                            <!-- la clase modal-dialog-scrollable permite agregar un scrollvertical largo-->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Conferencia: "Innovaciones en la Industria Automotriz"</h5>
+                                        <!-- <button type="button" class="cursor" data-bs-dismiss="modal" aria-label="Cerrar">
+                                            <span aria-hidden="true">&times</span>
+                                        </button> -->
+                                    </div>
+                                    <div class="modal-body justificar">
+                                        Únete a reconocidos expertos de la industria mientras discuten las últimas innovaciones y tendencias en el mundo del automóvil. Desde tecnologías emergentes hasta nuevos modelos de negocios, esta conferencia te mantendrá al día con los avances más recientes.
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-danger cursor" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--====================================Modal 3=======================================================--> 
+                    <!--====================================Modal 4=======================================================--> 
+                    <div class="col-lg-3 col-md-6 col-sm-12 text-dark">
+                        <div class="card">
+                            <img src="../img/cine.jpg" class="img-fluid cursor" alt="Salud Fisica" data-bs-toggle="modal" data-bs-target="#myModal4">
+                            <div class="card-body">
+                                <h5 class="card-title">Noche de Cine</h5>
+                                <p class="card-text ">
+                                    "Clásicos del Cine Automotriz"
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- CONFIGURACION MODAL -->
+                        <div class="modal fade" id="myModal4" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <!-- la clase modal-dialog modal-lg al mismo tiempo pone la ventana grande horizontal -->
+                            <!-- la clase modal-dialog-centered centra verticalmente la ventana  -->
+                            <!-- la clase modal-dialog-scrollable permite agregar un scrollvertical largo-->
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Noche de Cine: "Clásicos del Cine Automotriz"</h5>
+                                        <!-- <button type="button" class="cursor" data-bs-dismiss="modal" aria-label="Cerrar">
+                                            <span aria-hidden="true">&times</span>
+                                        </button> -->
+                                    </div>
+                                    <div class="modal-body justificar">
+                                        Disfruta de una noche bajo las estrellas mientras proyectamos una selección de clásicos del cine automotriz. Desde persecuciones emocionantes hasta dramas inspiradores, esta noche de cine te transportará a través de las emociones y la historia de los autos en la pantalla grande.
+                                        <div class="pt-3"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div class="container">
+                                            <button type="button" class="btn btn-danger cursor" data-bs-dismiss="modal">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--====================================Modal 4=======================================================--> 
+                    <div class="container text-center pb-3">
+                        <a href="" class="btn btn-outline-danger custom-btn">Reservar</a>
+                    </div>
+                </div>
+                <hr style="color: white;">
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="container" style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+                <h2 class="text-lefttitulo3 text-white pt-5 pb-3" style="font-size: 65px;">Contáctanos</h2>
+                <p class="text-white">¿Tienes alguna pregunta sobre nuestros eventos o quieres más información sobre cómo reservar? ¡No dudes en contactarnos!</p>
+            </div>
+        </section>
+
+        <section class="sectionForm d-flex justify-content-center align-items-center py-4">
+            <div class="containerForm">
+                <form id="form">
+                    <div class="formRow">
+                        <div class="colForm">
+                            <div class="inputBox">
+                                <input id="nombreTxt" type="text" name="name" required="required">
+                                <span class="text">Nombre</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+    
+                        <div class="colForm">
+                            <div class="inputBox">
+                                <input id="apellidoTxt" type="text" name="lastname" required="required">
+                                <span class="text">Apellido</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="formRow">
+                        <div class="colForm">
+                            <div class="inputBox">
+                                <input id="emailTxt" type="text" name="email" required="required">
+                                <span class="text">Email</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+    
+                        <div class="colForm">
+                            <div class="inputBox">
+                                <input id="numberTxt" type="number" name="phone" required="required">
+                                <span class="text">Teléfono</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="formRow">
+                        <div class="colForm">
+                            <div class="inputBox textarea">
+                                <textarea id="mensajeTxt" name="message" required="required"></textarea>
+                                <span class="text">Mensaje</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="formRow">
+                        <div class="colForm">
+                            <p id="mensajeAlert"></p>
+                            <input id="btnSend" type="submit" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="container-fluidfooter">
+            <ul class="copyright">
+                <li>&copy;Examen</li>
+                <li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
+    
+            </ul>
+        </footer>
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script src="../js/contacto.js"></script>
+    </body>
+</html>

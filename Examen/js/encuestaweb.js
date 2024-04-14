@@ -45,18 +45,18 @@ function evaluarEncuesta() {
 
         var mensaje3 = "";
         if (respuesta4 == "Buena") {
-            mensaje3 = "Apreciamos que califique nuestra atencion al cliente de buena manera, seguiremos brindando nuestro servicio incluso mejor para seguir complaciendo a nuestros clientes.";
+            mensaje3 = "Apreciamos que califique nuestra atención al cliente de buena manera, seguiremos brindando nuestro servicio incluso mejor para seguir complaciendo a nuestros clientes.";
         } else if (respuesta4 == "Regular") {
-            mensaje3 = "Agradecemos su sinceridad acerca de nuestros servicio de atencion, vamos a trabajar para mejorarlo.";
+            mensaje3 = "Agradecemos su sinceridad acerca de nuestros servicio de atención, vamos a trabajar para mejorarlo.";
         } else {
-            mensaje3 = "Lamentamos nuestra atencion al cliente le haya decepcionado, nos ocuparemos de eso para mejorar pronto y no causar otro problema igual.";
+            mensaje3 = "Lamentamos nuestra atención al cliente le haya decepcionado, nos ocuparemos de eso para mejorar pronto y no causar otro problema igual.";
         }
 
         var mensaje2 = "";
         if (respuesta3 == "Si") {
             mensaje2 = "Gracias por preferirnos y poder darnos otra posible visita.";
         } else {
-            mensaje2 = "Gracias por su respuesta, intentaremos mejorar para que pueda volver a nuestro hotel y sentirse más comodo.";
+            mensaje2 = "Gracias por su respuesta, intentaremos mejorar para que pueda volver a nuestro museo.";
         }
 
         //desplegable aparecera cuando el cliente da clic al boton Enviar

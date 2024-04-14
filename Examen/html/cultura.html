@@ -19,10 +19,11 @@
 
         <link rel="icon" href="../img/favicon.png">
 
+    <!--Libreria de iconoes web iconscout-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-    <!-- 
-    <link href="css/jquery.timepicker.css" rel="stylesheet">
-    -->
+    <!--Libreria de Remixicon-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
 
 </head>
 
@@ -74,8 +75,8 @@
 
     <header class="container-fluid banner1">
         <div class="container pt-5" style="font-family: montserrat, sans-serif; text-transform: uppercase;">
-            <h2 class="text-lefttitulo3 text-white pt-5" style="font-size: 65px;">Conocimientos</h2>
-            <p class="text-white">¿Que tanto sabes sobre los hiperdeportivos?</p>
+            <h2 class="text-lefttitulo3 text-white pt-5" style="font-size: 65px;">Retroalimentación</h2>
+            <p class="text-white"><i class="ri-arrow-down-double-line"></i>¿Sabías estos?<i class="ri-arrow-down-double-line"></i></p>
         </div>
     </header>
 
@@ -83,7 +84,7 @@
         <div class="container text-white">
             <div class="row">
                 <div class="col-md-12 col-lg-6 d-flex align-items-center">
-                    <p class="container text-left pt-5 formato1">
+                    <p class="container text-left pt-5 formato1" style="text-align: justify;">
                         Los hiperdeportivos son automóviles de alto rendimiento diseñados para alcanzar velocidades extremadamente altas y ofrecer un manejo excepcional en carreteras y circuitos. Estos vehículos suelen destacarse por su potencia, diseño aerodinámico y tecnología de vanguardia. Generalmente, están equipados con motores de alto rendimiento, chasis ligeros y sistemas avanzados de suspensión y frenado para proporcionar un rendimiento excepcional en términos de velocidad, aceleración y manejo. Ejemplos emblemáticos de hiperdeportivos incluyen el Bugatti Chiron, el Koenigsegg Jesko, el Pagani Huayra y el McLaren P1, entre otros. Estos automóviles suelen ser producidos en cantidades limitadas y están destinados a entusiastas adinerados y coleccionistas de automóviles que buscan lo último en rendimiento y exclusividad.
                     </p>
                 </div>
@@ -108,9 +109,9 @@
     </div>
 
     <section class="container text-white">
-        <div class="instrucciones text-center pt-5">
-            <h1>Realice la siguiente encuesta</h1>
-            <p class="pt-3">Esta encuesta se realiza con el fin de obtener su opinion personal acerca del servicio brindado por parte de nuestro hotel,
+        <div class="instrucciones" style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+            <h2 class="text-left titulo3 text-white pt-5" style="font-size: 55px;">Realice la siguiente encuesta</h2>
+            <p class="pt-3">Esta encuesta se realiza con el fin de obtener su opinion personal acerca del servicio brindado por parte de nuestro museo,
                 <br> le agradecemos que se tome unos minutos para realizarla.</p>
         </div>
 
@@ -123,10 +124,10 @@
                     <!-- preguntas-->
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <div class="inputs mb-3">
-                            <label for="pregunta1" class="colorLabel">1. Que es lo que mas destacaria durante la estadia en nuestro hotel?</label><br>
+                            <label for="pregunta1" class="colorLabel">1. Que es lo que mas destacaria durante la vista en nuestro museo?</label><br>
                             <input type="text" id="r1" class="form-control mt-2" required>
 
-                            <label for="pregunta2" class="mt-3 colorLabel">2. Que es lo primero que recomendarias a alguien para venir a nuestro hotel?</label><br>
+                            <label for="pregunta2" class="mt-3 colorLabel">2. Que es lo primero que recomendarias a alguien para venir a nuestro museo?</label><br>
                             <input type="text" id="r2" class="form-control mt-2" required>
                         </div>
                     </div>
@@ -157,14 +158,14 @@
                         <div class="checks">
                             <label for="opinion" class="mb-2 colorLabel">5. Marque las opciones que destaque.</label><br>
                             <input type="checkbox" id="calidad" class="checkbox" name="calidad"> Calidad
-                            <input type="checkbox" id="atencion" class="checkbox" name="atencion"> Atencion
+                            <input type="checkbox" id="atencion" class="checkbox" name="atencion"> Atención
                             <input type="checkbox" id="servicio" class="checkbox" name="servicio"> Servicio
 
-                            <label for="opinion" class="mb-2 mt-3 colorLabel">6. Como se entero de nuestro hotel?<br>Marque 1 o más opciones.</label><br>
-                            <input type="checkbox" id="radio" class="checkbox"> Radio
+                            <label for="opinion" class="mb-2 mt-3 colorLabel">6. Como se entero de nuestro museo?<br>Marque 1 o más opciones.</label><br>
+                            <input type="checkbox" id="radio" class="checkbox"> Tiktok
                             <input type="checkbox" id="youtube" class="checkbox"> Youtube
                             <input type="checkbox" id="facebook" class="checkbox"> Facebook <br>
-                            <input type="checkbox" id="television" class="checkbox mt-2"> Television
+                            <input type="checkbox" id="television" class="checkbox mt-2"> Instagram
                             <input type="checkbox" id="otro" class="checkbox mt-2"> Otro
                         </div>
                     </div>
@@ -182,8 +183,8 @@
 
 
             <!-- resultados al cliente en la pagina web-->
-            <div class="Resultados">
-                <h2 class="pt-3 pb-3" id="res0"></h2>
+            <div class="Resultados text-center" >
+                <h2 class="pt-3 pb-3 text-center" id="res0"></h2>
                 <p id="res1"></p>
                 <p id="res2"></p>
                 <p id="res3"></p>
@@ -191,16 +192,22 @@
         </div>
     </section>
 
+    <div class="container">
+        <hr class="linea">
+    </div>
+
 
     <section class="container-fluid">
         <!-- SECCION TESTIMOMINAL -->
         <div class="container">
             <section class="">
-                <div class="container-sm-6 pt-5">
-                    <h2 class="titulos text-center">Testimoniales</h2>
-                    <p class="objetivo">
-                        Contar con testimonios de personas que han aprobado los servicios o productos de una empresa y que han tenido una buena experiencia, es un elemento muy potente y diferenciador para lograr que otros hagan lo mismo. Su gran poder de atracción es que aportan
-                        contenido, funcionan como una fuente de resolución de problemas y se convierten en una prueba de la fiabilidad del 100%.
+                <div class="container-sm-6 ">
+                    <div class="instrucciones" style="font-family: montserrat, sans-serif; text-transform: uppercase;">
+                        <h2 class="text-left titulo3 text-white pt-5" style="font-size: 55px;">ÍCONOS DEL ASFALTO:</h2>
+                        <p class="pt-3 text-white">7 LEYENDAS DEL MUNDO DEL AUTOMOVILISMO Y EL TUNING</p>
+                    </div>
+                    <p class="objetivo text-white pt-5">
+                        En el mundo del automovilismo y el tuning, hay figuras que trascienden las pistas y las calles para convertirse en verdaderos íconos. Desde pilotos legendarios hasta constructores visionarios, estas siete personalidades destacan por su pasión desenfrenada por los autos y su habilidad para llevar la cultura del motor a nuevos límites. Con estilos únicos y hazañas impresionantes, cada uno de ellos ha dejado una marca indeleble en la historia del automovilismo, inspirando a una generación de entusiastas a perseguir sus sueños a toda velocidad.
                     </p>
     
                     <div class="pt-5"></div>
@@ -213,44 +220,41 @@
                         <!-- owl-theme centra las flechas de una vez-->
                         <div class="testimonials owl-carousel owl-theme">
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/3586798/pexels-photo-3586798.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Angie Vargas</h3>
-                                <p>Me inscribí al curso de diseño web y ha sido increíble.</p>
+                                <img src="../img/akira.jpg" alt="">
+                                <h3>Akira Nakai</h3>
+                                <p>Fundador de RWB (Rauh-Welt Begriff), conocido en modificaciones de Porsche.</p>
                             </div>
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Jason Villanueva</h3>
-                                <p>Decidí llevar el curso de Power BI para crecer profesionalmente.</p>
+                                <img src="../img/nagata.jpg" alt="">
+                                <h3>Smokey Nagata</h3>
+                                <p>Leyenda del tuning y las carreras callejeras y pasión por los autos japoneses.</p>
                             </div>
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Keyleb Smith</h3>
-                                <p>Estoy en el curso de Microsoft SQL y me encanta.</p>
+                                <img src="../img/alex.jpg" alt="">
+                                <h3>Alex Choi</h3>
+                                <p>Estrella del tuning de autos superdeportivos, conocido por sus modificaciones extravagantes.</p>
                             </div>
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/1239288/pexels-photo-1239288.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Laura Solano</h3>
-                                <p>Entré al curso de programación con JavaScript y he aprendido mucho.</p>
+                                <img src="../img/kei.jpg" alt="">
+                                <h3>Keiichi Tsuchiya</h3>
+                                <p>Leyenda del drift, conocido como "Drift King", famosos por su habilidad en el drift.</p>
                             </div>
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/3222422/pexels-photo-3222422.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Daniel Quirós</h3>
-                                <p>Estoy en el curso de electrónica y estoy muy emocionado.</p>
+                                <img src="../img/kato.jpg" alt="">
+                                <h3>Wataru Kato</h3>
+                                <p>Creador de Liberty Walk, famoso por sus kits de carrocería extravagantes para superdeportivos.</p>
                             </div>
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Noah Calvo</h3>
-                                <p>Recién ingrese al curso de Excel y me ha ayudado mucho.</p>
+                                <img src="../img/miura.jpg" alt="">
+                                <h3>Kei Miura</h3>
+                                <p>Creador de Rocket Bunny, conocida por sus kits de carrocería anchos y agresivos.</p>
                             </div>
                             <div class="item">
-                                <img src="https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
-                                <h3>Karina Muñoz</h3>
-                                <p>Recién ingrese al curso de Excel y me ha ayudado mucho.</p>
+                                <img src="../img/john.jpg" alt="">
+                                <h3>Hennessey Performance</h3>
+                                <p>Fundado por John Hennessey, conocido por modificaciones en Dodge, Chevrolet y Ford.</p>
                             </div>
                         </div>
-    
-    
-    
                     </div>
                 </div>
             </section>
@@ -258,6 +262,18 @@
 
         <hr>
     </section>
+
+    <div class="container">
+        <hr class="linea">
+    </div>
+
+    <footer class="container-fluidfooter">
+        <ul class="copyright">
+            <li>&copy;Examen</li>
+            <li>2024 <a href="https://ucenfotec.ac.cr/">UCENFOTEC</a></li>
+
+        </ul>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
 

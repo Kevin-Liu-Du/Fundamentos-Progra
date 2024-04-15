@@ -149,8 +149,14 @@
                                 </select>
                             </div>
                         </div>
+                        
+                        <div class="colForm">
+                            <div class="formRow">
+                                <div class="animacion2 pt-5 cursor img-fluid rounded mx-auto d-block" style="width: 200px; height: 200px;"></div>
+                            </div>
+                        </div>
                     </div>
-    
+
                     <div class="container">
                         <div class="formRow">
                             <div class="colForm">
@@ -176,6 +182,34 @@
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+        <!-- interactividad Lottie JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
+
+        <!-- libreria Lottie JS-->
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
+
         <script src="js/index.js"></script>
+
+        <!-- programacion ANIMACION2 -->
+
+    <script>
+        //seleciona un elemento del DOM con la clase CSS "animacion2" y lo alamcena en la variable anima.
+        let anima = document.querySelector(".animacion2");
+        //carga la animacion utilizando la funcion loadAnimation de la biblioteca Bodymovin
+        let animation = bodymovin.loadAnimation({
+            //es el contenedor donde se muestra la animacion, que en este caso es el elemento llamado anima
+            container: anima,
+            path: "https://lottie.host/127d1017-ba9c-42e0-8db9-122241776519/YZINmjtkbs.json",
+            renderer: "svg",
+            loop: false,
+            autoplay: false,
+            name: "Login", //se puede borrar no es obligatorio
+        });
+        //en la funcion click se llama al metodo playSegments() en la animacion, 
+        //este metodo reproduce la animacion desde el fotograma 0 hasta el fotograma 150, y el segundo argumento (true) indica si la animacion debe repoducirse en bucle.
+        anima.addEventListener("click", function() {
+            animation.playSegments([0, 150], true);
+        });
+    </script>
     </body>
 </html>

@@ -32,6 +32,13 @@ body {
     background-color: red;
 }
 
+.nav-item img{
+    height: 1.5625rem;
+    margin-top: 9px;
+}
+
+
+
 /* PERSONALIZACION MENU HAMBURGUESA */
 
 .navbar-toggler {

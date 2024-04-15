@@ -5,12 +5,17 @@
 }
 
 .bannerhistoria {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/garaje2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 400px;
-    background-attachment: fixed;
-}
+        display: flex;
+        align-items: center;
+        position: relative;
+        background-attachment: fixed;
+        background-size: cover;
+        /*control altura del banner*/
+        height: calc(50vh);
+        background-position: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/garaje2.jpg");
+        background-blend-mode: multiply;
+    }
 
 .bannerhistoria p {
     padding-top: 25px;
@@ -31,6 +36,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    width: 80%;
+    margin-left: 50px;
 }
 
 
@@ -246,65 +253,102 @@
 /*tabs */
 /* propiedades de la caja del tabulador */
 
+
+
 .tab {
+    display: flex;
+    border-radius: 5px;
     overflow: hidden;
-    border: 2px solid #ccc;
-    background-color: #A9A9A9;
-    /*color de la barra principal del tabulador*/
-    /*background-color: #f1f1f1;*/
-    align-items: center;
 }
-
-p {
-    font-size: 20px;
-    text-align: left;
-}
-
-.tam1 {
-    font-size: 24px;
-}
-
-
-/* controla propiedades de los TABS */
 
 .tab button {
-    background-color: inherit;
-    float: left;
-    color: #000;
+    background-color: #f2f2f2;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
+    padding: 10px 20px;
+    flex: 1;
+    transition: background-color 0.3s;
 }
 
-
-/* controla el color sobre los TABS */
-
 .tab button:hover {
-    background-color: black;
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+strong {
     color: #fff;
 }
 
 
-/* controla el color activo de los TABS */
-
-.tab button.active {
-    background-color: #FF0000;
-    color: #000;
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    border-radius: 5px;
 }
 
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+    border-radius: 5px 5px 0 0;
+    font-weight: bolder;
+}
 
-/* controla el contenido de cada pestaña tab */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 2px solid #ccc;
+    padding: 20px;
     border-top: none;
-    background: #E1E1E1;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.pb-3 {
+    padding-bottom: 15px;
+}
+
+strong {
+    color: #fff;
+}
 
 /* El efecto de animación desvanecimiento tarda 2 segundos al entrar a cada pestaña */
 
@@ -321,19 +365,6 @@ p {
     }
 }
 
-/*carrusel */
-
-p{
-    font-size: 20px;
-}
-
-/*estilos referentes al titulo Foto #*/
-.fotofooter  {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 
 

@@ -84,7 +84,7 @@ h2{
 
 /*=====================================Estilo para footer======================= */
 footer.container-fluidfooter {
-    position: fixed; /* Fijar el footer en la parte inferior */
+    position: relative; /* Fijar el footer en la parte inferior */
     bottom: 0; /* Colocar el footer al final de la página */
     width: 100%; /* Ancho completo del footer */
     display: flex; /* Usar flexbox para centrar verticalmente el contenido */
@@ -92,7 +92,7 @@ footer.container-fluidfooter {
     align-items: center; /* Centrar verticalmente el contenido */
     padding: 20px 0; /* Espaciado interior del footer */
     z-index: 9999; /* Asegurar que el footer esté por encima de otros elementos */
-    background-color: #f2f2f2; /* Color de fondo del footer */
+    background-color: #000; /* Color de fondo del footer */
 }
 
 footer.container-fluidfooter ul {

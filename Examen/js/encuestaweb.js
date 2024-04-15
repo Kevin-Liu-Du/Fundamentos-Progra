@@ -65,12 +65,20 @@ function evaluarEncuesta() {
             text: "Gracias por realizar nuestra encuesta",
             //icon: "success",
             html: "<iframe src='https://embed.lottiefiles.com/animation/123492' width='440' height='380' > < /iframe>"
-        })
+        }).then((result) => {
+            // Esta parte del código se ejecutará después de que el usuario interactúe con el cuadro de diálogo.
+            // Aquí result es el resultado devuelto por swal.fire(), que en este caso no se usa.
+            
+            // Aquí se envía el formulario después de que el usuario haya interactuado con el cuadro de diálogo
+            emailjs.sendForm("service_1thdu2i", "template_bkud7wq", "#formulario", "Zk0pZ2Vmcm9xWyDKC");
+        });
+        
         //resultado de la encuesta
         document.getElementById("res0").innerHTML = "¡Gracias por sus respuestas!";
         document.getElementById("res1").innerHTML = mensaje2
         document.getElementById("res2").innerHTML = mensaje3
         document.getElementById("res3").innerHTML = mensaje1
+
     }
 }
 

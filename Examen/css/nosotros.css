@@ -354,6 +354,7 @@ strong {
 
 .tabcontent {
     animation: efect1 2s;
+    text-decoration: none;
 }
 
 @keyframes efect1 {

@@ -11,7 +11,9 @@ function init() {
     let numero = document.getElementById('numberTxt');
     let cedula = document.getElementById('cedulaTxt');
     let fecha = document.getElementById('fechaTxt');
-    let evento = document.getElementById('eventosTxt'); 
+    let evento = document.getElementById('eventosTxt');
+    let persona = document.getElementById('cantidadPersonas');
+    let costo = document.getElementById('costoTotal');
     let alerta = document.getElementById('mensajeAlert');
     let btnEnviar = document.getElementById('btnSend');
     let expressionEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
@@ -25,9 +27,11 @@ function init() {
         cedula = cedulaTxt.value;
         fecha = fechaTxt.value;
         evento = eventosTxt.value;
+        persona = cantidadPersonas.value;
+        costo = costoTotal.value;
 
         //condicionales anidadas para validar cada campo del form 
-        if (nombre === '' && apellido === '' && email === '' && numero === '' && cedula === '' && fecha === '' && evento === '') {
+        if (nombre === '' && apellido === '' && email === '' && numero === '' && cedula === '' && fecha === '' && evento === '' && persona === '' && costo === '') {
             alerta.textContent = 'Debe llenar todos los campos';
             alerta.classList.add('alertaRoja');
             alerta.classList.remove('alertaVerde');
@@ -64,6 +68,10 @@ function init() {
             alerta.textContent = 'El campo evento esta vacío';
             alerta.classList.add('alertaRoja');
             alerta.classList.remove('alertaVerde');
+        } else if (persona === '') {
+            alerta.textContent = 'El campo cantidad de personas esta vacío';
+            alerta.classList.add('alertaRoja');
+            alerta.classList.remove('alertaVerde');
 
         } else {
             //si NO existe error en los campos validados se envian los datos al servidor de correo 
@@ -86,7 +94,9 @@ function init() {
         numberTxt.value = '';
         cedulaTxt.value = '';
         fechaTxt.value = '';
-        eventosTxt.value = ''
+        eventosTxt.value = '';
+        cantidadPersonas.value = '';
+        costoTotal.value = '';
     }
 }
 
@@ -101,3 +111,15 @@ let hoy = new Date();
         camposFecha.forEach(function(input) {
             input.setAttribute('min', fechaHoy);
         });
+
+
+    // Precio de la entrada al museo de carros en dólares
+    var precioEntrada = 10;
+
+    // Función para calcular el costo total
+    function calcularCostoTotal() {
+        var cantidadPersonas = document.getElementById("cantidadPersonas").value;
+        var costoTotal = cantidadPersonas * precioEntrada;
+        document.getElementById("costoTotal").value = "$" + costoTotal.toFixed(2); // Mostrar el costo total con dos decimales y el símbolo "$"
+    }
+
